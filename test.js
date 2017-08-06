@@ -1,12 +1,21 @@
 var app = require('./index.js');
+var fs = require('fs');
 
 var send_to_app = "hello!";
 
 app.handler(send_to_app, null, function(error, result){
     
-    result.forEach(function(tweet){
-        console.log(tweet.created_at);
-        console.log(tweet.text);
+    var data = JSON.stringify(result);
+    
+    console.log(data);
+    
+    fs.writeFile("data/example2.json", data, function(err) {
+    
+        if(err) {
+            return console.log(err);
+        }
+
+        console.log("The file was saved!");
     }); 
-    console.log("Tweets = ", result.length);
+    
 });

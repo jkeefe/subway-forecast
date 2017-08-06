@@ -1,0 +1,708 @@
+{
+    "times": {
+        "schedule": {
+            "635": {
+                "N": [
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502055849,
+                        "departureTime": 1502055849
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502056066,
+                        "departureTime": 1502056066
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502056492,
+                        "departureTime": 1502056492
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502056560,
+                        "departureTime": 1502056560
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502056633,
+                        "departureTime": 1502056633
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502056817,
+                        "departureTime": 1502056817
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502057040,
+                        "departureTime": 1502057040
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502057226,
+                        "departureTime": 1502057226
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502057308,
+                        "departureTime": 1502057308
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502057520,
+                        "departureTime": 1502057520
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502057748,
+                        "departureTime": 1502057748
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502057774,
+                        "departureTime": 1502057774
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058000,
+                        "departureTime": 1502058000
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058166,
+                        "departureTime": 1502058166
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502058540,
+                        "departureTime": 1502058540
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058660,
+                        "departureTime": 1502058660
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059140,
+                        "departureTime": 1502059140
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059260,
+                        "departureTime": 1502059260
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059620,
+                        "departureTime": 1502059620
+                    }
+                ],
+                "S": [
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502055180,
+                        "departureTime": 1502055180
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502055971,
+                        "departureTime": 1502055971
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502056044,
+                        "departureTime": 1502056044
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502056376,
+                        "departureTime": 1502056376
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502056403,
+                        "departureTime": 1502056403
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502056592,
+                        "departureTime": 1502056592
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502057019,
+                        "departureTime": 1502057019
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502057066,
+                        "departureTime": 1502057066
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502057101,
+                        "departureTime": 1502057101
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502057470,
+                        "departureTime": 1502057470
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502057809,
+                        "departureTime": 1502057809
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502057820,
+                        "departureTime": 1502057820
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502057900,
+                        "departureTime": 1502057900
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058510,
+                        "departureTime": 1502058510
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502058609,
+                        "departureTime": 1502058609
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058990,
+                        "departureTime": 1502058990
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059110,
+                        "departureTime": 1502059110
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059710,
+                        "departureTime": 1502059710
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059860,
+                        "departureTime": 1502059860
+                    }
+                ]
+            }
+        },
+        "updatedOn": 1502055832
+    },
+    "tweets": [
+        {
+            "created_at": "Sun Aug 06 21:43:46 +0000 2017",
+            "id": 894313071048634400,
+            "id_str": "894313071048634368",
+            "text": "عندما يخفق الأصدقاء، كن أول من يمد يد المساعدة.\n#تلسكوب_نمر_اسياد_الترند   MTa",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "تلسكوب_نمر_اسياد_الترند",
+                        "indices": [
+                            48,
+                            72
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "ar",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 882198851691720700,
+                "id_str": "882198851691720706",
+                "name": "اسياد_الترند",
+                "screen_name": "OnyokCil",
+                "location": "الدمام",
+                "description": "قروب : #اسياد_الترند ، لرفع التاقات, بادارة @Mans__0 , #منصور_النصر_اسد_الترند",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 0,
+                "friends_count": 0,
+                "listed_count": 0,
+                "created_at": "Tue Jul 04 11:26:11 +0000 2017",
+                "favourites_count": 0,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 77,
+                "lang": "ar",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/885208063720001536/oLQkBlI__normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/885208063720001536/oLQkBlI__normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/882198851691720706/1499885079",
+                "profile_link_color": "F5FF6A",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "ar"
+        },
+        {
+            "created_at": "Sun Aug 06 21:43:34 +0000 2017",
+            "id": 894313022751203300,
+            "id_str": "894313022751203328",
+            "text": "- posso chamar meus amigos?\n- depende, é mta gnt?\n- não, só os íntimos mesmo\n- beleza, adc eles no grupo https://t.co/ZRQaJBaeau",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 894313011099390000,
+                        "id_str": "894313011099389958",
+                        "indices": [
+                            105,
+                            128
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/DGk88gCW0AYw8WV.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/DGk88gCW0AYw8WV.jpg",
+                        "url": "https://t.co/ZRQaJBaeau",
+                        "display_url": "pic.twitter.com/ZRQaJBaeau",
+                        "expanded_url": "https://twitter.com/lucspambeer/status/894313022751203328/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "small": {
+                                "w": 680,
+                                "h": 580,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 900,
+                                "h": 767,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 900,
+                                "h": 767,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 894313011099390000,
+                        "id_str": "894313011099389958",
+                        "indices": [
+                            105,
+                            128
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/DGk88gCW0AYw8WV.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/DGk88gCW0AYw8WV.jpg",
+                        "url": "https://t.co/ZRQaJBaeau",
+                        "display_url": "pic.twitter.com/ZRQaJBaeau",
+                        "expanded_url": "https://twitter.com/lucspambeer/status/894313022751203328/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "small": {
+                                "w": 680,
+                                "h": 580,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 900,
+                                "h": 767,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 900,
+                                "h": 767,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2910391173,
+                "id_str": "2910391173",
+                "name": "tezzi",
+                "screen_name": "lucspambeer",
+                "location": "Buenos Aires, Argentina",
+                "description": "Não li e aceitei os termos de contrato 🦄✨",
+                "url": "https://t.co/t7qTo11px0",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/t7qTo11px0",
+                                "expanded_url": "http://instagram.com/cortezzi_",
+                                "display_url": "instagram.com/cortezzi_",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 240,
+                "friends_count": 186,
+                "listed_count": 0,
+                "created_at": "Mon Dec 08 04:46:08 +0000 2014",
+                "favourites_count": 2357,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 2989,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/887113360814297089/6HlCIakK_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/887113360814297089/6HlCIakK_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2910391173/1493722693",
+                "profile_link_color": "000000",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 1,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "pt"
+        },
+        {
+            "created_at": "Sun Aug 06 21:43:25 +0000 2017",
+            "id": 894312985509933000,
+            "id_str": "894312985509933056",
+            "text": "-الصدق عز حتى ولو كان فيه ما تكره ، والكذب ذل حتى ولو كان فيه ما تحب.\n#تلسكوب_نمر_اسياد_الترند   mtA",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "تلسكوب_نمر_اسياد_الترند",
+                        "indices": [
+                            70,
+                            94
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "ar",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 882198524800241700,
+                "id_str": "882198524800241665",
+                "name": "اسياد_الترند",
+                "screen_name": "EmiroseZ",
+                "location": "الدمام",
+                "description": "قروب : #اسياد_الترند ، لرفع التاقات, بادارة @Mans__0 , #منصور_النصر_اسد_الترند",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 0,
+                "friends_count": 0,
+                "listed_count": 0,
+                "created_at": "Tue Jul 04 11:24:53 +0000 2017",
+                "favourites_count": 0,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 34,
+                "lang": "ar",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/887450666305769472/CkWHftOy_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/887450666305769472/CkWHftOy_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/882198524800241665/1500419724",
+                "profile_link_color": "91649A",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "ar"
+        },
+        {
+            "created_at": "Sun Aug 06 21:43:21 +0000 2017",
+            "id": 894312964890800100,
+            "id_str": "894312964890800128",
+            "text": "\"caralho 400 milhões eh mta coisa\"\n\n\"sim é quase a população de Londrina\"",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 597633546,
+                "id_str": "597633546",
+                "name": "lulu",
+                "screen_name": "stardhust",
+                "location": "Pelotas, Brasil",
+                "description": "I hope I die before they save my soul",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 800,
+                "friends_count": 413,
+                "listed_count": 7,
+                "created_at": "Sat Jun 02 16:34:58 +0000 2012",
+                "favourites_count": 17732,
+                "utc_offset": -7200,
+                "time_zone": "Mid-Atlantic",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 63262,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000078048665/36e7e28b35646c533de013aa9a1d5613.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000078048665/36e7e28b35646c533de013aa9a1d5613.jpeg",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/892785245795344384/gFLICFf2_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/892785245795344384/gFLICFf2_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/597633546/1463880822",
+                "profile_link_color": "F58EA8",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "FFFFFF",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": {
+                "id": "6d5542f8d837770d",
+                "url": "https://api.twitter.com/1.1/geo/id/6d5542f8d837770d.json",
+                "place_type": "city",
+                "name": "Curitiba",
+                "full_name": "Curitiba, Brazil",
+                "country_code": "BR",
+                "country": "Brazil",
+                "contained_within": [],
+                "bounding_box": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -49.3916434,
+                                -25.6447517
+                            ],
+                            [
+                                -49.1852775,
+                                -25.6447517
+                            ],
+                            [
+                                -49.1852775,
+                                -25.3457471
+                            ],
+                            [
+                                -49.3916434,
+                                -25.3457471
+                            ]
+                        ]
+                    ]
+                },
+                "attributes": {}
+            },
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "pt"
+        }
+    ]
+}

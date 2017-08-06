@@ -1,6 +1,7 @@
 // Require modules here
 var Twit = require('twit');
 var moment = require('moment');
+var Mta = require('mta-gtfs');
 var keys = require('../keys/subway_watcher_keys');
 
 // Include global variables here (if any)
@@ -11,14 +12,19 @@ var bot = new Twit({
     access_token_secret:  keys.TWITTER_ACCESS_TOKEN_SECRET
 });
 
+var mta = new Mta({
+    key: keys.MTA_API_KEY, // only needed for mta.schedule() method
+    feed_id: 1                  // optional, default = 1
+});
+
+var new_record = {};
+
+
 exports.handler = function(event, context, callback){ 
 
     // funtional code goes here ... with the 'event' and 'context' coming from
     // whatever calls the lambda function (like CloudWatch or Alexa function).
     // callback function goes back to the caller.
-    
-    var today = moment().format("YYYY-MM-DD");
-    // var today = "2017-03-13";
     
     var tweet_options = {
         q: 'MTA OR @NYCTsubway OR (subway AND nyc) -RT',
@@ -27,11 +33,11 @@ exports.handler = function(event, context, callback){
     };
     
     getTweets(tweet_options)
-    .then(function(tweet_list){
-        
+    .then(getSubwayTimes())
+    .then(getSubwayStatus())
+    .then(function(){
         // format is callback(error, response);
-        callback(null, tweet_list);
-        
+        callback(null, new_record);
     })
     .catch(function(){
         console.log("Promise problem!");
@@ -60,10 +66,10 @@ function getTweets(options) {
                 
                 // Tweet time created_at format: Sun Aug 06 18:14:56 +0000 2017
                 var tweet_time = moment(tweet.created_at, "ddd MMM DD HH:mm:ss ZZ YYYY");
-                console.log("here", tweet_time);
                 
                 var time_difference = time_now.diff(tweet_time, "seconds");
                 
+                // only get tweets that are less than 60 seconds old
                 if (time_difference < 60) {
                     mostest_latest.push(tweet);
                     console.log("Time difference: ", time_difference);
@@ -71,9 +77,32 @@ function getTweets(options) {
                 
             });
             
-            resolve(mostest_latest);
+            // add to the global record
+            new_record.tweets = mostest_latest;
+            
+            resolve();
             return;
             
         });    
+    });
+}
+
+function getSubwayTimes() {
+    return new Promise ((resolve, reject) => {
+        mta.schedule(635).then(function (result) {
+            console.log(result);
+            new_record.times = result;
+            resolve();
+        });
+    });
+}
+
+function getSubwayStatus() {
+    return new Promise ((resolve, reject) => {
+        mta.status('subway').then(function (result) {
+            console.log(result);
+            new_record.status = result;
+            resolve();
+        });
     });
 }
