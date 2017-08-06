@@ -1,0 +1,27 @@
+{
+  "name": "subway-forecast",
+  "version": "1.0.0",
+  "description": "Experiments in monitoring and predicting trouble on the NYC subway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkeefe/subway-forecast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkeefe/subway-forecast/issues"
+  },
+  "homepage": "https://github.com/jkeefe/subway-forecast#readme",
+  "devDependencies": {
+    "claudia": "^2.14.2"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "twit": "^2.2.9"
+  }
+}
