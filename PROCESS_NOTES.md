@@ -49,6 +49,8 @@ Does the live train data predict tweets?
 
 Live data feeds here: http://datamine.mta.info/list-of-feeds
 
+**note!** the line IDs are actually at the _end of the url_ ... so the fourth listed item, B D F M lines, is http://datamine.mta.info/mta_esi.php?key=key&feed_id=21 which is *21**
+
 1-2-3-4-5-6 train data is this: http://datamine.mta.info/mta_esi.php?key=API_KEY_HERE&feed_id=1
 
 Downloads a GTFS file. 
@@ -68,4 +70,15 @@ moment("2017-08-06T17:43:52.000")
 > moment.unix(1502055832).diff(moment.unix(1502056492), 'minutes')
 -11
 ```
+
+## Historical Data
+
+IRT lines only
+
+http://web.mta.info/developers/MTA-Subway-Time-historical-data.html
+
+## Station info:
+
+http://web.mta.info/developers/data/nyct/subway/Stations.csv
+
 

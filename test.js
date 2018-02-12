@@ -7,9 +7,9 @@ app.handler(send_to_app, null, function(error, result){
     
     var data = JSON.stringify(result);
     
-    console.log(data);
+    // console.log(data);
     
-    fs.writeFile("data/example2.json", data, function(err) {
+    fs.writeFile("data/example_calcs.json", data, function(err) {
     
         if(err) {
             return console.log(err);

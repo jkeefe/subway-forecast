@@ -1,1 +1,603 @@
-{"times":{"schedule":{"635":{"N":[{"routeId":"6","delay":null,"arrivalTime":1502058135,"departureTime":1502058135},{"routeId":"6","delay":null,"arrivalTime":1502058469,"departureTime":1502058469},{"routeId":"4","delay":null,"arrivalTime":1502058497,"departureTime":1502058497},{"routeId":"2","delay":null,"arrivalTime":1502058845,"departureTime":1502058845},{"routeId":"4","delay":null,"arrivalTime":1502058947,"departureTime":1502058947},{"routeId":"6","delay":null,"arrivalTime":1502058960,"departureTime":1502058960},{"routeId":"4","delay":null,"arrivalTime":1502059274,"departureTime":1502059274},{"routeId":"2","delay":null,"arrivalTime":1502059352,"departureTime":1502059352},{"routeId":"6","delay":null,"arrivalTime":1502059440,"departureTime":1502059440},{"routeId":"4","delay":null,"arrivalTime":1502059653,"departureTime":1502059653},{"routeId":"6","delay":null,"arrivalTime":1502059920,"departureTime":1502059920},{"routeId":"2","delay":null,"arrivalTime":1502060021,"departureTime":1502060021},{"routeId":"4","delay":null,"arrivalTime":1502060180,"departureTime":1502060180},{"routeId":"6","delay":null,"arrivalTime":1502060400,"departureTime":1502060400},{"routeId":"4","delay":null,"arrivalTime":1502060520,"departureTime":1502060520},{"routeId":"2","delay":null,"arrivalTime":1502060700,"departureTime":1502060700},{"routeId":"4","delay":null,"arrivalTime":1502061090,"departureTime":1502061090},{"routeId":"2","delay":null,"arrivalTime":1502061360,"departureTime":1502061360},{"routeId":"4","delay":null,"arrivalTime":1502061690,"departureTime":1502061690},{"routeId":"2","delay":null,"arrivalTime":1502062080,"departureTime":1502062080},{"routeId":"4","delay":null,"arrivalTime":1502062320,"departureTime":1502062320}],"S":[{"routeId":"6","delay":null,"arrivalTime":1502055180,"departureTime":1502055180},{"routeId":"6","delay":null,"arrivalTime":1502058304,"departureTime":1502058304},{"routeId":"4","delay":null,"arrivalTime":1502058431,"departureTime":1502058431},{"routeId":"6","delay":null,"arrivalTime":1502058790,"departureTime":1502058790},{"routeId":"2","delay":null,"arrivalTime":1502058856,"departureTime":1502058856},{"routeId":"4","delay":null,"arrivalTime":1502059069,"departureTime":1502059069},{"routeId":"2","delay":null,"arrivalTime":1502059323,"departureTime":1502059323},{"routeId":"6","delay":null,"arrivalTime":1502059526,"departureTime":1502059526},{"routeId":"4","delay":null,"arrivalTime":1502059798,"departureTime":1502059798},{"routeId":"2","delay":null,"arrivalTime":1502059912,"departureTime":1502059912},{"routeId":"6","delay":null,"arrivalTime":1502060340,"departureTime":1502060340},{"routeId":"4","delay":null,"arrivalTime":1502060355,"departureTime":1502060355},{"routeId":"2","delay":null,"arrivalTime":1502060652,"departureTime":1502060652},{"routeId":"4","delay":null,"arrivalTime":1502061120,"departureTime":1502061120},{"routeId":"2","delay":null,"arrivalTime":1502061360,"departureTime":1502061360},{"routeId":"4","delay":null,"arrivalTime":1502061840,"departureTime":1502061840},{"routeId":"2","delay":null,"arrivalTime":1502062080,"departureTime":1502062080},{"routeId":"2","delay":null,"arrivalTime":1502062800,"departureTime":1502062800}]}},"updatedOn":1502058157},"status":[{"name":"123","status":"PLANNED WORK","text":"\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(164021);><b>[2] No trains between E 180 St and Dyre Av</a><br/><br/><div id= 164021 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:45 PM Fri to 5 AM Mon, until Aug 14     <br><br>[2] service operates between <b>E 180 St</b> and<b> South Ferry</b>.<br><br>[SB] Buses make all stops between <b>E 180 St</b> and <b>Dyre Av</b>.<br><br>&bull; Transfer between trains and [SB] buses at <b>E 180 St</b>.<br><html><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1612750)>Show Shuttle Bus Stops</a></b></font>                           [TP]<div id=\"1612750\"; style=\"display:none;\"><br><table class=plannedworkTableStyle  width=70% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><br><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus<br></b><tr><td>E 180 St  [ad]  [2]  [5] <td>Morris Park Av at E 180 St<td><b>Bx21<br></b><tr><td rowspan=2>Morris Park<td>Morris Park Av at Hone Av<td><b>Bx21<br></b><tr><td>Williamsbridge Rd at Lydig Av<td> &mdash;<br><tr><td rowspan=2>Pelham Pkwy<td>Williamsbridge Rd at Pelham Pkwy S<td><b>Bx8<br></b><tr><td>Williamsbridge Rd at Pelham Pkwy N<td><b>Bx8</b><tr><td rowspan=2>Gun Hill Rd<td>E Gun Hill Rd at Knapp St (to Dyre Av)<td><b>Bx28<br></b><tr><td>E Gun Hill Rd at DeWitt Pl (to E 180 St)<td><b>Bx28<br></b><tr><td>Baychester Av<td>Boston Rd at Baychester Av <td><b>Bx30<br></b><tr><td>Dyre Av<td>Dyre Av at Light St<td><b>Bx16</b></table></div></html><br><br><b>Note:</b> This advisory reflects changes to weekend [2] train service | <a href=http://web.mta.info/nyct/service/pdf/t2cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162679);><b>Weekend [2] [3] station closures and route changes</a><br/><br/><div id= 162679 class=\"plannedWorkDetail\" ></b>Until Summer 2018<br><br>No service at Park Place, Wall St, Clark St and Hoyt St; use nearby [4] [5] stations<br><br>No [2] [3] service between Manhattan and Brooklyn; take the [4] or [5] instead.<br><br>Weekend service map for <a href=http://web.mta.info/nyct/service/pdf/FF_Clark_St_web_map.pdf target=_blank><font color=#0000FF><b><u>Lower Manhattan and Downtown Brooklyn</u></b></font></a><br><br></font>New timetables with Weekend Route Changes | [2] <a href=http://web.mta.info/nyct/service/pdf/t2cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [3] <a href=http://web.mta.info/nyct/service/pdf/t3cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [4] <a href=http://web.mta.info/nyct/service/pdf/t4cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [5] <a href=http://web.mta.info/nyct/service/pdf/t5cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161274);><b>[1] No trains between 137 St and 242 St</a><br/><br/><div id= 161274 class=\"plannedWorkDetail\" >[A] [C] trains, M3, M100 and [SB] free shuttle buses provide alternate service<br></b>Weekend, 11:30 PM Fri to 5 AM Mon, Aug 4 - 7<br><br></font>[1] service operates between <b>South Ferry</b> and <b>137 St</b>.<br><br><table class=plannedworkTableStyle  width=70%><tr><td><font size=3><b>Travel Alternatives</b></font><td align=right>[TP]</table><br>[SB] Buses operate along four routes <i>making station stops</i> on the [1] line:<br>  1. <b>Broadway</b> between 242 and 207 Sts, stopping at the 207 St [A] station.<br>  2. <b>Dyckman St </b>between [1] and [A] stations <i>late nights</i> only. Use <a href=http://web.mta.info/nyct/bus/schedule/manh/m100cur.pdf target=_blank><font color=#0000FF><b><u>M100</u></b></font></a> service <i>days/evenings</i>.<br>  3. <b>St Nicholas Av</b> between 191 and 168 Sts. Free transfer for <a href=http://web.mta.info/nyct/bus/schedule/manh/m003cur.pdf target=_blank><font color=#0000FF><b><u>M3</u></b></font></a> service.<br>  4. <b>Broadway</b> between 168 and 137 Sts.<br><br>Use [A] service <i>to/from</i> nearby stations in <b>Washington Heights.<br></b>Use [A] [C] service along <b>Central Park West</b> and <b>8 Av</b>.<br></font><html><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=90%><tr bgcolor=FAF8CC><td><b> Station</b><td><b>Alternate Service<tr><td>242, 238, 231, 225, 207 Sts<td>Broadway [SB]<tr><td>215 St<td>nearby <a href=http://web.mta.info/weekender/tileMap.html?staID=10114 target=_blank><font color=#0000FF><b><u>207 St</u></b></font></a>, Broadway [SB]<tr><td>Dyckman St<td>nearby Dyckman St [A] station, Broadway or Dyckman [SB], <br><a href=http://web.mta.info/nyct/bus/schedule/manh/m100cur.pdf target=_blank><font color=#0000FF><b><u>M100</u></b></font></a> bus<tr><td> 191 and 181 Sts<td> <a href=http://web.mta.info/nyct/bus/schedule/manh/m003cur.pdf target=_blank><font color=#0000FF><b><u>M3</u></b></font></a> bus <i>or </i> St Nicholas Av [SB]<tr><td>157, 145 and 137 Sts<td>Broadway [SB], [A] at nearby stations</table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=90%><tr bgcolor=#000000><td colspan=2><font color=#000000>Key Transfer Points</font><tr><td>207 St [ad] [A]<td>[A], Broadway [SB]<tr><td>Dyckman St (Broadway)<td>[A], <b>M100</b> [SB]<tr><td>168 St [ad]<td>[A] [C], Broadway or St Nicholas Av [SB] <b>M3</b><tr><td>137 St [1]<td>[1], Broadway [SB]<tr><td>59 St-Columbus Circle [ad]<td>[1] [A] [C] [D]</table><br><br></font><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1612740);>Show Shuttle Bus Stops</a></b></font><div id=\"1612740\"; style=\"display:none;\"><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station  <td><b>Broadway Shuttle Bus Stop <td><b>Bus Stop</b><tr><td>242 St<td>Broadway at Manhattan College Pkwy<td>&mdash;<tr><td>238 St<td>Broadway at 238 St<td>&mdash;<tr><td>231 St<td>Broadway at 231 St<td>&mdash;<tr><td>225 St<td>Broadway at 225 St<td>&mdash<tr><td>215 St<td>Broadway at 215 St<td>&mdash;<tr><td>207 St<td>207 St at 10 Av<td>&mdash;<tr><td>207 St [ad] [A]<td>Broadway at 207 St<td>&mdash;</table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Dyckman Shuttle Bus Stop</b><td><b>Bus Stop</b><tr><td rowspan=2>Dyckman St <td>Dyckman St at Broadway [A]<td><b>M100</b><tr><td>Dyckman St at Nagle Av<td><b>M100</b></table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>St Nicholas Av Shuttle Bus Stop</b><td><b>Bus Stop</b><tr><td>191 St<td> St Nicholas Av at 190 St<td><b>M3</b><tr><td>181 St<td>St Nicholas Av at 181 St<td><b>M3</b><tr><td>168 St [ad] [A] [C]<td>St Nicholas Av at 168 St<td><b>M3</b></table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station<td><b>Broadway Shuttle Bus Stop<td><b>Bus Stop</b><tr><td>168 St [ad] [A] [C]<td>Broadway at 168 St<td>&mdash;<tr><td>157 St<td>Broadway at 157 St<td><b>M4</b><tr><td>145 St<td>Broadway at 145 St<td><b>M4</b><tr><td>137 St [1]<td>Broadway at 137 St<td><b>M4</b></table></div></html><br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 6:12PM"},{"name":"456","status":"PLANNED WORK","text":"\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161290);><b>[6] Service operates in two sections:</a><br/><br/><div id= 161290 class=\"plannedWorkDetail\" >  1. Between Brooklyn Bridge and 125 St, and via the [4] <i>to/from</i> 149 St-Grand Concourse<br>  2. Between 125 St and Pelham Bay Park<br></b>Weekend, 12:01 AM Sat to 5 AM Mon, </font>Aug 5 - 7 <br><br>&bull; Transfer at 125 St to continue your trip.<br><br><b>Note:</b> [6] trains </font><i>from </i>Manhattan skip 138 St-Grand Concourse [4] Station.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161289);><b>[6] Pelham Bay Park-bound trains skip Brook Av, Cypress Av, E 143 St, E 149 St and Longwood Av</a><br/><br/><div id= 161289 class=\"plannedWorkDetail\" ></b>Weekend, 11:45 PM Fri to 5 AM Mon, Aug 4 - 7<br><br>For service <i>to</i> these stations, take the [6] to Hunts Point Av and transfer to a Manhattan-bound [6].<br><br>For service <i>from </i>these stations, take the [6] to 3 Av-138 St and transfer to a Pelham Bay Park-bound [6].<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 6:12PM"},{"name":"7","status":"GOOD SERVICE","text":"","Date":"","Time":""},{"name":"ACE","status":"DELAYS","text":"\r\n                    <span class=\"TitleDelay\">Delays</span>\r\n                    <span class=\"DateStyle\">\r\n                    &nbsp;Posted:&nbsp;08/06/2017&nbsp; 4:00PM\r\n                    </span><br/><br/>\r\n                  <P>Due to track maintenance at <STRONG>59 St-Columbus Circle,</STRONG> [A], [C] and [D] trains are running with delays in both directions.  </P>\r\n<P>Allow additional travel time.</P>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159777);><b>[E] Trains run local in both directions between Queens Plaza and 71 Av</a><br/><br/><div id= 159777 class=\"plannedWorkDetail\" ></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br>Trains stop at 36 St, Steinway St, 46 St, Northern Blvd, 65 St, Roosevelt,<br>Elmhurst, Grand Avs, Woodhaven Blvd, 63 Dr and 67 Av.<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> No [E] trains between 71 Av and Jamaica Center during this time.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159775);><b>[E] No trains between 71 Av and Jamaica Center</a><br/><br/><div id= 159775 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br><b>[E]</b> service operates between <b>World Trade Center </b>and <b>71 Av</b>.<br>  &bull; Trains run <i>local</i> in both directions between Queens Plaza and 71 Av.<br><br>[SB] Buses operate between <b>71 Av </b>and <b>Jamaica Center</b>, stopping at 75 Av, Union Tpke,<br>Briarwood, Jamaica-Van Wyck and Sutphin Blvd/Archer Av.<br>  &bull; Transfer between [E] trains and [SB] buses at 71 Av.<br><b>MTA LIRR </b>will cross-honor <a href=http://web.mta.info/metrocard/ target=_blank><font color=#0000FF><b><u>MetroCard</u></b></font></a> for travel between Penn Station and Jamaica <i>or</i> Kew Gardens  LIRR stations. NYCT customers should present their <b>MetroCard </b>to the LIRR conductor.<br><br><b><i>Alternate travel notes:<br></b></i>For service between Manhattan and JFK Airport, use the [A] instead.<br>For service between Manhattan and Jamaica Center, consider the [A] and [J] via transfer at<br>Broadway Junction.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1597750);>Show Shuttle Bus Stops</a></b></font></font>                           [TP]<div id=\"1597750\"; style=\"display:none;\"></font><table class=plannedworkTableStyle  width=90% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus</b><tr><td>71 Av [ad] [E] [F]* <td>Queens Blvd at 71 Rd<td>&mdash;<tr><td>75 Av<td>Queens Blvd at 75 Av<td><b>Q60</b><tr><td rowspan=2>Union Tpke<td>Queens Blvd at 80 Rd<td><b>Q60</b><tr><td>Queens Blvd at 78 Av<td><b>Q60</b><tr><td rowspan=2>Briarwood<td>Van Wyck Svc Rd at Queens Blvd (to Jamaica Center)<td>&mdash;<tr><td>Queens Blvd at Main St (to 71 Av)<td>&mdash;<tr><td rowspan=2>Jamaica-Van Wyck<td>Van Wyck Svc Rd at 89 Av (to Jamaica Center)<td>&mdash;<tr><td>Jamaica Av at Van Wyck Svc Rd (to 71 Av)<td><b>Q54</b><tr><td>Sutphin Blvd/Archer Av [ad] [J]<td>Archer Av at Sutphin Blvd<td><b>Q30</b><tr><td>Jamaica Center [ad] [J]<td>Archer Av at 153 St<td><b>Q83</b></table><br><i>*No [F] service between 71 Av and 179 St during this time.</div><br><br></i><b>Note:</b> No [R] service between Queens Plaza and 71 Av during this time<i>.<br></i><b></b></font> <br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162493);><b>[C] Trains skip 50 St, 23 St and Spring St in both directions</a><br/><br/><div id= 162493 class=\"plannedWorkDetail\" ></b><a href=http://advisory.mtanyct.info/pdf_files/ServiceGuide.pdf target=_blank><font color=#0000FF><b><u>Weekend</u></b></font></a>, Saturday <i>and</i> Sunday, Aug 5 - 6<br><br>For 50 St and 23 St, take the [D]* or<b> [E] </b>instead. Transfer between [C] and [D] trains at <br>59 St-Columbus Circle or [D] and [E] trains at 42 St/Port Authority, 34 St-Penn Station or 14 St.<br><br>For Spring St, take the [E]. Transfer between trains at W 4 St or Canal St.<br><br><i>*This detour has taken into account additional planned service changes.<br><br></i><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning <br clear=left>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 4:00PM"},{"name":"BDFM","status":"DELAYS","text":"\r\n                    <span class=\"TitleDelay\">Delays</span>\r\n                    <span class=\"DateStyle\">\r\n                    &nbsp;Posted:&nbsp;08/06/2017&nbsp; 4:00PM\r\n                    </span><br/><br/>\r\n                  <P>Due to track maintenance at <STRONG>59 St-Columbus Circle,</STRONG> [A], [C] and [D] trains are running with delays in both directions.  </P>\r\n<P>Allow additional travel time.</P>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159601);><b>[M] No trains between Myrtle Av and Metropolitan Av</a><br/><br/><div id= 159601 class=\"plannedWorkDetail\" >[L] trains and [SB] free shuttle buses provide alternate service<br></b>All times, until Sep 1, 2017<br><br><b>Weekdays:<br></b>[M] service operates between 71 Av and Myrtle Av, and via the [J] <i>to/from</i> Broadway Junction.<br><br><b>Weekends:<br></b>[M] service operates between Essex St and Myrtle Av, and via the [J] <i>to/from</i> Broadway Junction.<br><br>[M] trains do not operate during late nights.                                                       [TP]<br><br>[SB] <b>Shuttle buses operate along three routes:<br></b><html><a href=http://bustime.mta.info/#Shuttle-M1 target=_blank><font color=#0000FF align><b><u>Shuttle-M1</u></b></font></a></font>. <i>Local</i> between <b>Myrtle Av</b> and <b>Fresh Pond Rd </b>stopping at Central Av, <br>                     Knickerbocker Av, Myrtle-Wyckoff Avs, Seneca Av and Forest Av.<br><a href=http://bustime.mta.info/#Shuttle-M2 target=_blank><font color=#0000FF><b><u>Shuttle-M2</u></b></font></a>.</font> <i>Local</i> between <b>Myrtle Av</b> and <b>Metropolitan Av </b>stopping at Central Av, <br>                     Knickerbocker Av, Myrtle-Wyckoff Avs, Seneca Av and Forest Av.<br><a href=http://bustime.mta.info/#Shuttle-M3 target=_blank><font color=#0000FF><b><u>Shuttle-M3</u></b></font></a></font>. <i>Express</i> between <b>Flushing Av [J] </b>and <b>Metropolitan Av </b>stopping at <br>                     Jefferson St [L] and Fresh Pond Rd.<br>  &bull; Transfer between trains and [SB] buses at Myrtle Av [J] [M] [Z], Flushing Av [J] [M],<br>     Myrtle-Wyckoff Avs [L] and Jefferson St [L].<br><br></font><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1596010);>Show Shuttle Bus Stops</a></b></font><div id=\"1596010\"; style=\"display:none;\"><br><br><img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg> Station booths and MetroCard vending machines are available. <br><table class=plannedworkTableStyle  border=\"0\" cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><font size=3><b>Station</b></fontsize><td><font size=3><b>Shuttle Bus Stop</b><td><font size=3><b>Shuttle Bus Route<br></b><tr><td rowspan=2>Metropolitan Av  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right> <td>Metropolitan Av at Rentar Plz<td>M2 & M3<br><tr><td>Metropolitan Av at Fresh Pond Rd<td>M2 & M3<br><tr><td rowspan=2>Fresh Pond Rd  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Putnam Av at Stier Pl (to Myrtle Av)<td>M1, (M2 nights only)<br><tr><td>67 Av at Fresh Pond Rd (to Metropolitan Av)<td>M2 nights only<br><tr><td rowspan=3>Forest Av  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Putnam Av at Fairview Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Madison St at Fairview Av (to Metropolitan Av)<td>M2<br><tr><td>Madison St at Fairview Av (to Fresh Pond Rd)<td>M1<br><tr><td>Seneca Av   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Seneca Av at Woodbine St<td>M1 & M2<br><tr><td rowspan=3>Myrtle-Wyckoff Avs [ad]  [L]   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right> <td>Gates Av at Myrtle Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Gates Av at Wyckoff Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Palmetto St at Myrtle Av (to Metropolitan Av)<td>M1 & M2<br><tr><td rowspan=2>Knickerbocker Av<td>Myrtle Av at Bleecker St<br>(to Fresh Pond Rd/Metropolitan Av)<td>M1 & M2<tr><br><td>Myrtle Av at Knickerbocker Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Central Av<td>Myrtle Av at Cedar St<td>M1 & M2<br><tr><td>Myrtle Av (Broadway) [J] [M]  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Broadway at Myrtle Av<td>M1 & M2<br><tr><td rowspan=2>Jefferson St  [L]   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Flushing Av at Wyckoff Av (to Metropolitan Av)<td>M3<br><tr><td>Flushing Av at Harrison Pl (to Flushing Av)<td>M3<br><tr><td>Flushing Av  [ad]  [J] [M]  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Flushing Av at Broadway<td>M3</table></div></html> <br><br></font><a href=http://web.mta.info/nyct/service/MyrtleAvenue/ target=_blank><font color=#0000FF><b><u>Click here</u></b></font></a> for additional details about the Myrtle Viaduct reconstruction project.<br><br>New [M] timetable with route change. | <a href=http://web.mta.info/nyct/service/pdf/tmcur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> <br><br><br></font><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162510);><b>[M] Essex St-bound trains skip Flushing Av, Lorimer St and Hewes St<br clear=left><font color=#000000>     </font>Trains run every 20 minutes</a><br/><br/><div id= 162510 class=\"plannedWorkDetail\" ></b>Weekend, 6:30 AM to 11 PM, Saturday, Aug 5<br>                       8 AM to 10 PM, Sunday, Aug 6<br><br>For service <i>to</i> these stations, take the [M] to Essex St* and transfer to a <br>Jamaica Center-bound [J] or Brooklyn-bound [M].<br><br>For service <i>from</i> these stations, take the [J] or [M] to Myrtle Av and <br>transfer to an Essex St-bound [M] or Broad St-bound [J].<br><br>&bull; Please allow additional travel time.<br><br><i>*Transfer at Marcy Av with <a href=http://web.mta.info/metrocard/mcgtreng.htm#unlimited target=_blank><font color=#0000FF><b><u>Unlimited Ride MetroCard</u></b></font></a>.<br><br><b>Alternate travel note:<br></b></i>Take the <a href=http://web.mta.info/nyct/bus/schedule/bkln/b046cur.pdf target=_blank><font color=#0000FF><b><u>B46</u></b></font></a> bus via transfer at Marcy Av or Myrtle Av.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159780);><b>[F] Trains run local in both directions between 71 Av and 21 St-Queensbridge</a><br/><br/><div id= 159780 class=\"plannedWorkDetail\" ></b></font>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br>Trains stop at 67 Av, 63 Dr, Woodhaven Blvd, Grand, Elmhurst, Roosevelt Avs,<br>65 St, Northern Blvd, 46, Steinway and 36 Sts.<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> No [F] trains between 71 Av and 179 St during this time.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159776);><b>[F] No trains between 71 Av and 179 St</a><br/><br/><div id= 159776 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br><b>[F]</b> service operates between <b>Stillwell Av </b>and <b>71 Av</b>.<br>  &bull;  Trains run <i>local</i> in both directions between 21 St-Queensbridge and 71 Av.<br><br>[SB] Buses operate between <b>71 Av </b>and <b>179 St</b>, stopping at 75 Av, Union Tpke, Briarwood,<br>Sutphin Blvd, Parsons Blvd and 169 St.<br>  &bull; Transfer between [F] trains and [SB] buses at 71 Av.<br><br><b>MTA LIRR </b>will cross-honor <a href=http://web.mta.info/metrocard/ target=_blank><font color=#0000FF><b><u>MetroCard</u></b></font></a> for travel between Penn Station and Jamaica <i>or</i> Kew Gardens  LIRR stations. NYCT customers should present their <b>MetroCard </b>to the LIRR conductor.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1597760);>Show Shuttle Bus Stops</a></b></font></font>                           [TP]<div id=\"1597760\"; style=\"display:none;\"></font><table class=plannedworkTableStyle  width=90% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus</b><tr><td>71 Av [ad] [E]* [F] <td>Queens Blvd at 71 Av<td><b>Q60</b><tr><td>75 Av<td>Queens Blvd at 75 Av<td><b>Q60</b><tr><td rowspan=2>Union Tpke<td>Queens Blvd at 80 Rd<td><b>Q60</b><tr><td>Queens Blvd at 78 Av<td><b>Q60</b><tr><td rowspan=2>Briarwood<td>Queens Blvd at 84 Dr (to 179 St)<td><b>Q20B</b><tr><td>Queens Blvd at Main St (to 71 Av)<td>&mdash;<tr><td>Sutphin Blvd<td>Hillside Av at Sutphin Blvd<td>&mdash;<tr><td>Parsons Blvd<td>Hillside Av at Parsons Blvd<td><b>Q43</b><tr><td>169 St<td>Hillside Av at 169 St<td><b>Q17</b><tr><td>179 St<td>Hillside Av at Edgerton Blvd<td>&mdash;</table><br><br><i>*No [E] service between 71 Av and Jamaica Center during this time.</i></div><br><br><b>Note:</b> No [R] service between Queens Plaza and 71 Av during this time<i>.<br></i><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162489);><b>[D] Service operates in two sections and is rerouted in Manhattan</a><br/><br/><div id= 162489 class=\"plannedWorkDetail\" >[F] [N] [Q] [R] trains and [SB] free shuttle buses provide alternate service<br></b>Weekend, 11:30 PM Fri to 5 AM Mon, Aug 4 - 7<br><br>No [D] service at <b>7 Av</b>,<b> 47-50 Sts</b>,<b> 42 St-Bryant Pk</b>,<b> 34 St-Herald Sq</b>, <b>Grand St </b>and<b> DeKalb Av</b>.<br><br><b>[D] service operates in two sections:<br></b></font>  1. Between<b> 205 St </b>and<b> B'way-Lafayette St, </b>and via the [F] <i>to/from</i> 2 Av<br>      &bull; <i>Trains run via the [A] local in both directions between 59 St-Columbus Circle and W 4 St. <br></i>  2. Between<b> Atlantic Av-Barclays Ctr </b>and<b> Stillwell Av<br>      </b>&bull; <i>Trains skip Union St, 4 Av-9 St and 25 St in both directions.<br><br></i>[SB] Buses operate between <b>W 4 St</b> and <b>Grand St</b>, stopping at <b>B'way-Lafayette St</b>.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1624890);>Show Shuttle Bus Stops</a></b></font><div id=\"1624890\"; style=\"display:none;\"> <table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station      </b></td><td><b>Bus Stop</b><td><b>Bus</b><tr><td>W 4 St [ad] [A] [C] [D] [E] [F]      <td>6 Av at W 3 St<td><b>M55</b><tr><td>B'way-Lafayette St [ad] [D] [F]  <td>Houston St at Broadway<td><b>M21</b><tr><td>Grand St<td>Grand St at Chrystie St  <td align=center>&mdash;</table></div><br><br><b> </b></font><table class=plannedworkTableStyle  width=80%><tr><td><font size=3><b>Travel Alternatives</b></font><td align=right>[TP]</table><br>For service between<b> Manhattan </b>and<b> Brooklyn</b>, take the [N] or [Q].<br>  </font>&bull; Transfer between [D] and [N] [Q] trains via the passageway at Times Sq-42 St/Port Authority.<br>  &bull; In Brooklyn, transfer between [D] and [N] [Q] trains at Atlantic Av-Barclays Ctr.<br>  &bull; Transfer between [N] [Q] and [F] at 34 St-Herald Sq.<br><br>For <b>7 Av</b>, take the [E] via transfer at Times Sq-42 St/Port Authority.<br><br></font>For <b>47-50 Sts</b>, <b>42 St-Bryant Pk</b> and <b>34 St-Herald Sq</b> take the [F].  <br>  &bull; </font>Transfer between [D] and [F] trains at W 4 St.<br>  &bull; Transfer between [N] [Q] and [F] trains at 34 St-Herald Sq.<br><br>For <b>Grand St</b>, take a [SB] bus via transfer at W 4 St or B'way-Lafayette St.<br><br>For <b>DeKalb Av</b>, take the [N] [Q] or [R]  instead via transfer at Atlantic Av-Barclays Ctr or <br>Times Sq 42 St/Port Authority.<br><br>For <b>Union St</b>, <b>4 Av-9 St</b> and <b>25 St</b>, take the [N] or [R] instead. <br>  </font>&bull; Transfer between [D] and [N] [R] trains at 36 St.<br><br><b>Note:</b> </font>Prospect Av is closed for renovation.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161284);><b>[D] Manhattan-bound trains skip 182-183 Sts</a><br/><br/><div id= 161284 class=\"plannedWorkDetail\" ></b>Weekends, 11:45 PM Fri to 5 AM Mon, until Aug 28<br><br>For service <i>to</i> this station, take the [D] to Tremont Av and transfer to a Norwood-bound [D].<br><br>For service <i>from</i> this station, take the [D] to Fordham Rd and transfer to a Manhattan-bound [D].<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 4:00PM"},{"name":"G","status":"GOOD SERVICE","text":"","Date":"","Time":""},{"name":"JZ","status":"PLANNED WORK","text":"\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162508);><b>[J] Broad St-bound trains skip Flushing Av, Lorimer St and Hewes St</a><br/><br/><div id= 162508 class=\"plannedWorkDetail\" ></b>Weekend, 3:45 AM Sat to 10 PM Sun, Aug 5 - 6<br><br></font>For service <i>to</i> these stations, take the [J] to Essex St* and transfer to a Jamaica Center-bound [J] or<br>Brooklyn-bound [M].<br><br>For service<i> from</i> these stations, take the [J] or [M] to Myrtle Av and transfer to a Broad St-bound [J].<br><br><i>*Transfer at Marcy Av with <a href=http://web.mta.info/metrocard/mcgtreng.htm#unlimited target=_blank><font color=#0000FF><b><u>Unlimited Ride MetroCard</u></b></font></a>.<br><br><b>Alternate travel note:<br></b></i>Take the <a href=http://web.mta.info/nyct/bus/schedule/bkln/b046cur.pdf target=_blank><font color=#0000FF><b><u>B46</u></b></font></a> bus via transfer at Marcy Av or Myrtle Av.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 6:12PM"},{"name":"L","status":"GOOD SERVICE","text":"","Date":"","Time":""},{"name":"NQR","status":"PLANNED WORK","text":"\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161702);><b>[R] No trains between Queens Plaza and 71 Av<br clear=left>[E] [F] trains provide alternate service</a><br/><br/><div id= 161702 class=\"plannedWorkDetail\" ></b></font><a href=http://advisory.mtanyct.info/pdf_files/ServiceGuide.pdf target=_blank><font color=#0000FF><b><u>Weekend</u></b></font></a>, Saturday <i>and</i> Sunday, Aug 5 - 6<br><br>[R] service operates between <b>Bay Ridge-95 St </b>and <b>Queens Plaza</b>, <i>days and evenings</i>.<br><br>For local service in Queens, take the [E] or [F] instead.<br>  <br>&bull; Transfer between [E] and [R] trains at Queens Plaza.<br>&bull; Transfer between [F] and [R] trains at 34 St-Herald Sq.<br><br><b>Notes</b>: [E] trains run local between Queens Plaza and 71 Av <i>all weekend</i>.<br>           [F] trains run local between 36 St and 71 Av all <i>weekend</i>.<br></font><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162495);><b>[N] Trains run local in both directions between DeKalb Av and 59 St, Brooklyn</a><br/><br/><div id= 162495 class=\"plannedWorkDetail\" ></b></font>Weekend, 12:01 AM Sat to 5 AM Mon, Aug 5 - 7<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> Prospect Av and 53 St are closed for renovation.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ","Date":"08/06/2017","Time":" 6:12PM"},{"name":"S","status":"GOOD SERVICE","text":"","Date":"","Time":""},{"name":"SIR","status":"GOOD SERVICE","text":"","Date":"","Time":""}],"tweets":[{"created_at":"Sun Aug 06 22:22:20 +0000 2017","id":894322779113357300,"id_str":"894322779113357312","text":"Minha mãe disse que era p eu deletar meu facebook pq tem mta foto feia lá 😂😂😂😂","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"metadata":{"iso_language_code":"pt","result_type":"recent"},"source":"<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1497271789,"id_str":"1497271789","name":"Amanda Vitória","screen_name":"amandaapinho","location":"Brasil","description":"🌸🌸🌸","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":272,"friends_count":359,"listed_count":0,"created_at":"Mon Jun 10 03:29:45 +0000 2013","favourites_count":6546,"utc_offset":-7200,"time_zone":"Mid-Atlantic","geo_enabled":true,"verified":false,"statuses_count":4102,"lang":"pt","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/894058444151500802/cnDsy3E5_normal.jpg","profile_image_url_https":"https://pbs.twimg.com/profile_images/894058444151500802/cnDsy3E5_normal.jpg","profile_banner_url":"https://pbs.twimg.com/profile_banners/1497271789/1501708743","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":{"id":"ef4296e721b70dfe","url":"https://api.twitter.com/1.1/geo/id/ef4296e721b70dfe.json","place_type":"city","name":"Boa Vista","full_name":"Boa Vista, Brazil","country_code":"BR","country":"Brazil","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-61.000632,2.427858],[-60.2877575,2.427858],[-60.2877575,3.606091],[-61.000632,3.606091]]]},"attributes":{}},"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"pt"},{"created_at":"Sun Aug 06 22:22:14 +0000 2017","id":894322752177524700,"id_str":"894322752177524737","text":"mano só to saindo com mlk q tem carro, é mta sorte","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"metadata":{"iso_language_code":"pt","result_type":"recent"},"source":"<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":331244986,"id_str":"331244986","name":"andie","screen_name":"whosendi","location":"São Paulo, Brasil","description":"avassaladora uma mina interessante\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsnap: andieoliveira","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":717,"friends_count":445,"listed_count":0,"created_at":"Thu Jul 07 21:37:44 +0000 2011","favourites_count":1674,"utc_offset":-10800,"time_zone":"Brasilia","geo_enabled":true,"verified":false,"statuses_count":7444,"lang":"pt","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000124353842/9146ac7da9d30ee84f82332b0e94d9da.jpeg","profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000124353842/9146ac7da9d30ee84f82332b0e94d9da.jpeg","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/892856142296109057/aqbL1CwN_normal.jpg","profile_image_url_https":"https://pbs.twimg.com/profile_images/892856142296109057/aqbL1CwN_normal.jpg","profile_banner_url":"https://pbs.twimg.com/profile_banners/331244986/1501254473","profile_link_color":"ABB8C2","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"E5507E","profile_text_color":"362720","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"pt"},{"created_at":"Sun Aug 06 22:22:07 +0000 2017","id":894322722830000100,"id_str":"894322722830000128","text":"Mais de duas semanas sem wi fi\nVtnc\nDesgraçaaaaaaaaaaaaaaaaaaa\nAaaaaaaaaa\nMerda\nAaaaaaaaa\nTo com mta raivaaaa","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"metadata":{"iso_language_code":"pt","result_type":"recent"},"source":"<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":888888078106079200,"id_str":"888888078106079232","name":"Asmina","screen_name":"AsminaMoon","location":"Vila Velha - ES","description":"🌈 Fight like a girl 🌈","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":45,"friends_count":138,"listed_count":0,"created_at":"Sat Jul 22 22:26:47 +0000 2017","favourites_count":462,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":139,"lang":"pt","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/891448485358313472/w58cs9Gj_normal.jpg","profile_image_url_https":"https://pbs.twimg.com/profile_images/891448485358313472/w58cs9Gj_normal.jpg","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"pt"}]}
+{
+    "times": {
+        "schedule": {
+            "635": {
+                "N": [
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058135,
+                        "departureTime": 1502058135
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058469,
+                        "departureTime": 1502058469
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058497,
+                        "departureTime": 1502058497
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502058845,
+                        "departureTime": 1502058845
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058947,
+                        "departureTime": 1502058947
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058960,
+                        "departureTime": 1502058960
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059274,
+                        "departureTime": 1502059274
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059352,
+                        "departureTime": 1502059352
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502059440,
+                        "departureTime": 1502059440
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059653,
+                        "departureTime": 1502059653
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502059920,
+                        "departureTime": 1502059920
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502060021,
+                        "departureTime": 1502060021
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502060180,
+                        "departureTime": 1502060180
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502060400,
+                        "departureTime": 1502060400
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502060520,
+                        "departureTime": 1502060520
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502060700,
+                        "departureTime": 1502060700
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502061090,
+                        "departureTime": 1502061090
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502061360,
+                        "departureTime": 1502061360
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502061690,
+                        "departureTime": 1502061690
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502062080,
+                        "departureTime": 1502062080
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502062320,
+                        "departureTime": 1502062320
+                    }
+                ],
+                "S": [
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502055180,
+                        "departureTime": 1502055180
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058304,
+                        "departureTime": 1502058304
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502058431,
+                        "departureTime": 1502058431
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502058790,
+                        "departureTime": 1502058790
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502058856,
+                        "departureTime": 1502058856
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059069,
+                        "departureTime": 1502059069
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059323,
+                        "departureTime": 1502059323
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502059526,
+                        "departureTime": 1502059526
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502059798,
+                        "departureTime": 1502059798
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502059912,
+                        "departureTime": 1502059912
+                    },
+                    {
+                        "routeId": "6",
+                        "delay": null,
+                        "arrivalTime": 1502060340,
+                        "departureTime": 1502060340
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502060355,
+                        "departureTime": 1502060355
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502060652,
+                        "departureTime": 1502060652
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502061120,
+                        "departureTime": 1502061120
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502061360,
+                        "departureTime": 1502061360
+                    },
+                    {
+                        "routeId": "4",
+                        "delay": null,
+                        "arrivalTime": 1502061840,
+                        "departureTime": 1502061840
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502062080,
+                        "departureTime": 1502062080
+                    },
+                    {
+                        "routeId": "2",
+                        "delay": null,
+                        "arrivalTime": 1502062800,
+                        "departureTime": 1502062800
+                    }
+                ]
+            }
+        },
+        "updatedOn": 1502058157
+    },
+    "status": [
+        {
+            "name": "123",
+            "status": "PLANNED WORK",
+            "text": "\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(164021);><b>[2] No trains between E 180 St and Dyre Av</a><br/><br/><div id= 164021 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:45 PM Fri to 5 AM Mon, until Aug 14     <br><br>[2] service operates between <b>E 180 St</b> and<b> South Ferry</b>.<br><br>[SB] Buses make all stops between <b>E 180 St</b> and <b>Dyre Av</b>.<br><br>&bull; Transfer between trains and [SB] buses at <b>E 180 St</b>.<br><html><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1612750)>Show Shuttle Bus Stops</a></b></font>                           [TP]<div id=\"1612750\"; style=\"display:none;\"><br><table class=plannedworkTableStyle  width=70% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><br><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus<br></b><tr><td>E 180 St  [ad]  [2]  [5] <td>Morris Park Av at E 180 St<td><b>Bx21<br></b><tr><td rowspan=2>Morris Park<td>Morris Park Av at Hone Av<td><b>Bx21<br></b><tr><td>Williamsbridge Rd at Lydig Av<td> &mdash;<br><tr><td rowspan=2>Pelham Pkwy<td>Williamsbridge Rd at Pelham Pkwy S<td><b>Bx8<br></b><tr><td>Williamsbridge Rd at Pelham Pkwy N<td><b>Bx8</b><tr><td rowspan=2>Gun Hill Rd<td>E Gun Hill Rd at Knapp St (to Dyre Av)<td><b>Bx28<br></b><tr><td>E Gun Hill Rd at DeWitt Pl (to E 180 St)<td><b>Bx28<br></b><tr><td>Baychester Av<td>Boston Rd at Baychester Av <td><b>Bx30<br></b><tr><td>Dyre Av<td>Dyre Av at Light St<td><b>Bx16</b></table></div></html><br><br><b>Note:</b> This advisory reflects changes to weekend [2] train service | <a href=http://web.mta.info/nyct/service/pdf/t2cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162679);><b>Weekend [2] [3] station closures and route changes</a><br/><br/><div id= 162679 class=\"plannedWorkDetail\" ></b>Until Summer 2018<br><br>No service at Park Place, Wall St, Clark St and Hoyt St; use nearby [4] [5] stations<br><br>No [2] [3] service between Manhattan and Brooklyn; take the [4] or [5] instead.<br><br>Weekend service map for <a href=http://web.mta.info/nyct/service/pdf/FF_Clark_St_web_map.pdf target=_blank><font color=#0000FF><b><u>Lower Manhattan and Downtown Brooklyn</u></b></font></a><br><br></font>New timetables with Weekend Route Changes | [2] <a href=http://web.mta.info/nyct/service/pdf/t2cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [3] <a href=http://web.mta.info/nyct/service/pdf/t3cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [4] <a href=http://web.mta.info/nyct/service/pdf/t4cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> | [5] <a href=http://web.mta.info/nyct/service/pdf/t5cur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161274);><b>[1] No trains between 137 St and 242 St</a><br/><br/><div id= 161274 class=\"plannedWorkDetail\" >[A] [C] trains, M3, M100 and [SB] free shuttle buses provide alternate service<br></b>Weekend, 11:30 PM Fri to 5 AM Mon, Aug 4 - 7<br><br></font>[1] service operates between <b>South Ferry</b> and <b>137 St</b>.<br><br><table class=plannedworkTableStyle  width=70%><tr><td><font size=3><b>Travel Alternatives</b></font><td align=right>[TP]</table><br>[SB] Buses operate along four routes <i>making station stops</i> on the [1] line:<br>  1. <b>Broadway</b> between 242 and 207 Sts, stopping at the 207 St [A] station.<br>  2. <b>Dyckman St </b>between [1] and [A] stations <i>late nights</i> only. Use <a href=http://web.mta.info/nyct/bus/schedule/manh/m100cur.pdf target=_blank><font color=#0000FF><b><u>M100</u></b></font></a> service <i>days/evenings</i>.<br>  3. <b>St Nicholas Av</b> between 191 and 168 Sts. Free transfer for <a href=http://web.mta.info/nyct/bus/schedule/manh/m003cur.pdf target=_blank><font color=#0000FF><b><u>M3</u></b></font></a> service.<br>  4. <b>Broadway</b> between 168 and 137 Sts.<br><br>Use [A] service <i>to/from</i> nearby stations in <b>Washington Heights.<br></b>Use [A] [C] service along <b>Central Park West</b> and <b>8 Av</b>.<br></font><html><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=90%><tr bgcolor=FAF8CC><td><b> Station</b><td><b>Alternate Service<tr><td>242, 238, 231, 225, 207 Sts<td>Broadway [SB]<tr><td>215 St<td>nearby <a href=http://web.mta.info/weekender/tileMap.html?staID=10114 target=_blank><font color=#0000FF><b><u>207 St</u></b></font></a>, Broadway [SB]<tr><td>Dyckman St<td>nearby Dyckman St [A] station, Broadway or Dyckman [SB], <br><a href=http://web.mta.info/nyct/bus/schedule/manh/m100cur.pdf target=_blank><font color=#0000FF><b><u>M100</u></b></font></a> bus<tr><td> 191 and 181 Sts<td> <a href=http://web.mta.info/nyct/bus/schedule/manh/m003cur.pdf target=_blank><font color=#0000FF><b><u>M3</u></b></font></a> bus <i>or </i> St Nicholas Av [SB]<tr><td>157, 145 and 137 Sts<td>Broadway [SB], [A] at nearby stations</table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=90%><tr bgcolor=#000000><td colspan=2><font color=#000000>Key Transfer Points</font><tr><td>207 St [ad] [A]<td>[A], Broadway [SB]<tr><td>Dyckman St (Broadway)<td>[A], <b>M100</b> [SB]<tr><td>168 St [ad]<td>[A] [C], Broadway or St Nicholas Av [SB] <b>M3</b><tr><td>137 St [1]<td>[1], Broadway [SB]<tr><td>59 St-Columbus Circle [ad]<td>[1] [A] [C] [D]</table><br><br></font><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1612740);>Show Shuttle Bus Stops</a></b></font><div id=\"1612740\"; style=\"display:none;\"><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station  <td><b>Broadway Shuttle Bus Stop <td><b>Bus Stop</b><tr><td>242 St<td>Broadway at Manhattan College Pkwy<td>&mdash;<tr><td>238 St<td>Broadway at 238 St<td>&mdash;<tr><td>231 St<td>Broadway at 231 St<td>&mdash;<tr><td>225 St<td>Broadway at 225 St<td>&mdash<tr><td>215 St<td>Broadway at 215 St<td>&mdash;<tr><td>207 St<td>207 St at 10 Av<td>&mdash;<tr><td>207 St [ad] [A]<td>Broadway at 207 St<td>&mdash;</table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Dyckman Shuttle Bus Stop</b><td><b>Bus Stop</b><tr><td rowspan=2>Dyckman St <td>Dyckman St at Broadway [A]<td><b>M100</b><tr><td>Dyckman St at Nagle Av<td><b>M100</b></table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>St Nicholas Av Shuttle Bus Stop</b><td><b>Bus Stop</b><tr><td>191 St<td> St Nicholas Av at 190 St<td><b>M3</b><tr><td>181 St<td>St Nicholas Av at 181 St<td><b>M3</b><tr><td>168 St [ad] [A] [C]<td>St Nicholas Av at 168 St<td><b>M3</b></table><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides width=70%><tr bgcolor=#FAF8CC><td><b>Station<td><b>Broadway Shuttle Bus Stop<td><b>Bus Stop</b><tr><td>168 St [ad] [A] [C]<td>Broadway at 168 St<td>&mdash;<tr><td>157 St<td>Broadway at 157 St<td><b>M4</b><tr><td>145 St<td>Broadway at 145 St<td><b>M4</b><tr><td>137 St [1]<td>Broadway at 137 St<td><b>M4</b></table></div></html><br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 6:12PM"
+        },
+        {
+            "name": "456",
+            "status": "PLANNED WORK",
+            "text": "\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161290);><b>[6] Service operates in two sections:</a><br/><br/><div id= 161290 class=\"plannedWorkDetail\" >  1. Between Brooklyn Bridge and 125 St, and via the [4] <i>to/from</i> 149 St-Grand Concourse<br>  2. Between 125 St and Pelham Bay Park<br></b>Weekend, 12:01 AM Sat to 5 AM Mon, </font>Aug 5 - 7 <br><br>&bull; Transfer at 125 St to continue your trip.<br><br><b>Note:</b> [6] trains </font><i>from </i>Manhattan skip 138 St-Grand Concourse [4] Station.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161289);><b>[6] Pelham Bay Park-bound trains skip Brook Av, Cypress Av, E 143 St, E 149 St and Longwood Av</a><br/><br/><div id= 161289 class=\"plannedWorkDetail\" ></b>Weekend, 11:45 PM Fri to 5 AM Mon, Aug 4 - 7<br><br>For service <i>to</i> these stations, take the [6] to Hunts Point Av and transfer to a Manhattan-bound [6].<br><br>For service <i>from </i>these stations, take the [6] to 3 Av-138 St and transfer to a Pelham Bay Park-bound [6].<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 6:12PM"
+        },
+        {
+            "name": "7",
+            "status": "GOOD SERVICE",
+            "text": "",
+            "Date": "",
+            "Time": ""
+        },
+        {
+            "name": "ACE",
+            "status": "DELAYS",
+            "text": "\r\n                    <span class=\"TitleDelay\">Delays</span>\r\n                    <span class=\"DateStyle\">\r\n                    &nbsp;Posted:&nbsp;08/06/2017&nbsp; 4:00PM\r\n                    </span><br/><br/>\r\n                  <P>Due to track maintenance at <STRONG>59 St-Columbus Circle,</STRONG> [A], [C] and [D] trains are running with delays in both directions.  </P>\r\n<P>Allow additional travel time.</P>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159777);><b>[E] Trains run local in both directions between Queens Plaza and 71 Av</a><br/><br/><div id= 159777 class=\"plannedWorkDetail\" ></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br>Trains stop at 36 St, Steinway St, 46 St, Northern Blvd, 65 St, Roosevelt,<br>Elmhurst, Grand Avs, Woodhaven Blvd, 63 Dr and 67 Av.<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> No [E] trains between 71 Av and Jamaica Center during this time.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159775);><b>[E] No trains between 71 Av and Jamaica Center</a><br/><br/><div id= 159775 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br><b>[E]</b> service operates between <b>World Trade Center </b>and <b>71 Av</b>.<br>  &bull; Trains run <i>local</i> in both directions between Queens Plaza and 71 Av.<br><br>[SB] Buses operate between <b>71 Av </b>and <b>Jamaica Center</b>, stopping at 75 Av, Union Tpke,<br>Briarwood, Jamaica-Van Wyck and Sutphin Blvd/Archer Av.<br>  &bull; Transfer between [E] trains and [SB] buses at 71 Av.<br><b>MTA LIRR </b>will cross-honor <a href=http://web.mta.info/metrocard/ target=_blank><font color=#0000FF><b><u>MetroCard</u></b></font></a> for travel between Penn Station and Jamaica <i>or</i> Kew Gardens  LIRR stations. NYCT customers should present their <b>MetroCard </b>to the LIRR conductor.<br><br><b><i>Alternate travel notes:<br></b></i>For service between Manhattan and JFK Airport, use the [A] instead.<br>For service between Manhattan and Jamaica Center, consider the [A] and [J] via transfer at<br>Broadway Junction.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1597750);>Show Shuttle Bus Stops</a></b></font></font>                           [TP]<div id=\"1597750\"; style=\"display:none;\"></font><table class=plannedworkTableStyle  width=90% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus</b><tr><td>71 Av [ad] [E] [F]* <td>Queens Blvd at 71 Rd<td>&mdash;<tr><td>75 Av<td>Queens Blvd at 75 Av<td><b>Q60</b><tr><td rowspan=2>Union Tpke<td>Queens Blvd at 80 Rd<td><b>Q60</b><tr><td>Queens Blvd at 78 Av<td><b>Q60</b><tr><td rowspan=2>Briarwood<td>Van Wyck Svc Rd at Queens Blvd (to Jamaica Center)<td>&mdash;<tr><td>Queens Blvd at Main St (to 71 Av)<td>&mdash;<tr><td rowspan=2>Jamaica-Van Wyck<td>Van Wyck Svc Rd at 89 Av (to Jamaica Center)<td>&mdash;<tr><td>Jamaica Av at Van Wyck Svc Rd (to 71 Av)<td><b>Q54</b><tr><td>Sutphin Blvd/Archer Av [ad] [J]<td>Archer Av at Sutphin Blvd<td><b>Q30</b><tr><td>Jamaica Center [ad] [J]<td>Archer Av at 153 St<td><b>Q83</b></table><br><i>*No [F] service between 71 Av and 179 St during this time.</div><br><br></i><b>Note:</b> No [R] service between Queens Plaza and 71 Av during this time<i>.<br></i><b></b></font> <br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162493);><b>[C] Trains skip 50 St, 23 St and Spring St in both directions</a><br/><br/><div id= 162493 class=\"plannedWorkDetail\" ></b><a href=http://advisory.mtanyct.info/pdf_files/ServiceGuide.pdf target=_blank><font color=#0000FF><b><u>Weekend</u></b></font></a>, Saturday <i>and</i> Sunday, Aug 5 - 6<br><br>For 50 St and 23 St, take the [D]* or<b> [E] </b>instead. Transfer between [C] and [D] trains at <br>59 St-Columbus Circle or [D] and [E] trains at 42 St/Port Authority, 34 St-Penn Station or 14 St.<br><br>For Spring St, take the [E]. Transfer between trains at W 4 St or Canal St.<br><br><i>*This detour has taken into account additional planned service changes.<br><br></i><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning <br clear=left>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 4:00PM"
+        },
+        {
+            "name": "BDFM",
+            "status": "DELAYS",
+            "text": "\r\n                    <span class=\"TitleDelay\">Delays</span>\r\n                    <span class=\"DateStyle\">\r\n                    &nbsp;Posted:&nbsp;08/06/2017&nbsp; 4:00PM\r\n                    </span><br/><br/>\r\n                  <P>Due to track maintenance at <STRONG>59 St-Columbus Circle,</STRONG> [A], [C] and [D] trains are running with delays in both directions.  </P>\r\n<P>Allow additional travel time.</P>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159601);><b>[M] No trains between Myrtle Av and Metropolitan Av</a><br/><br/><div id= 159601 class=\"plannedWorkDetail\" >[L] trains and [SB] free shuttle buses provide alternate service<br></b>All times, until Sep 1, 2017<br><br><b>Weekdays:<br></b>[M] service operates between 71 Av and Myrtle Av, and via the [J] <i>to/from</i> Broadway Junction.<br><br><b>Weekends:<br></b>[M] service operates between Essex St and Myrtle Av, and via the [J] <i>to/from</i> Broadway Junction.<br><br>[M] trains do not operate during late nights.                                                       [TP]<br><br>[SB] <b>Shuttle buses operate along three routes:<br></b><html><a href=http://bustime.mta.info/#Shuttle-M1 target=_blank><font color=#0000FF align><b><u>Shuttle-M1</u></b></font></a></font>. <i>Local</i> between <b>Myrtle Av</b> and <b>Fresh Pond Rd </b>stopping at Central Av, <br>                     Knickerbocker Av, Myrtle-Wyckoff Avs, Seneca Av and Forest Av.<br><a href=http://bustime.mta.info/#Shuttle-M2 target=_blank><font color=#0000FF><b><u>Shuttle-M2</u></b></font></a>.</font> <i>Local</i> between <b>Myrtle Av</b> and <b>Metropolitan Av </b>stopping at Central Av, <br>                     Knickerbocker Av, Myrtle-Wyckoff Avs, Seneca Av and Forest Av.<br><a href=http://bustime.mta.info/#Shuttle-M3 target=_blank><font color=#0000FF><b><u>Shuttle-M3</u></b></font></a></font>. <i>Express</i> between <b>Flushing Av [J] </b>and <b>Metropolitan Av </b>stopping at <br>                     Jefferson St [L] and Fresh Pond Rd.<br>  &bull; Transfer between trains and [SB] buses at Myrtle Av [J] [M] [Z], Flushing Av [J] [M],<br>     Myrtle-Wyckoff Avs [L] and Jefferson St [L].<br><br></font><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1596010);>Show Shuttle Bus Stops</a></b></font><div id=\"1596010\"; style=\"display:none;\"><br><br><img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg> Station booths and MetroCard vending machines are available. <br><table class=plannedworkTableStyle  border=\"0\" cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><font size=3><b>Station</b></fontsize><td><font size=3><b>Shuttle Bus Stop</b><td><font size=3><b>Shuttle Bus Route<br></b><tr><td rowspan=2>Metropolitan Av  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right> <td>Metropolitan Av at Rentar Plz<td>M2 & M3<br><tr><td>Metropolitan Av at Fresh Pond Rd<td>M2 & M3<br><tr><td rowspan=2>Fresh Pond Rd  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Putnam Av at Stier Pl (to Myrtle Av)<td>M1, (M2 nights only)<br><tr><td>67 Av at Fresh Pond Rd (to Metropolitan Av)<td>M2 nights only<br><tr><td rowspan=3>Forest Av  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Putnam Av at Fairview Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Madison St at Fairview Av (to Metropolitan Av)<td>M2<br><tr><td>Madison St at Fairview Av (to Fresh Pond Rd)<td>M1<br><tr><td>Seneca Av   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Seneca Av at Woodbine St<td>M1 & M2<br><tr><td rowspan=3>Myrtle-Wyckoff Avs [ad]  [L]   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right> <td>Gates Av at Myrtle Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Gates Av at Wyckoff Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Palmetto St at Myrtle Av (to Metropolitan Av)<td>M1 & M2<br><tr><td rowspan=2>Knickerbocker Av<td>Myrtle Av at Bleecker St<br>(to Fresh Pond Rd/Metropolitan Av)<td>M1 & M2<tr><br><td>Myrtle Av at Knickerbocker Av (to Myrtle Av)<td>M1 & M2<br><tr><td>Central Av<td>Myrtle Av at Cedar St<td>M1 & M2<br><tr><td>Myrtle Av (Broadway) [J] [M]  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Broadway at Myrtle Av<td>M1 & M2<br><tr><td rowspan=2>Jefferson St  [L]   <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Flushing Av at Wyckoff Av (to Metropolitan Av)<td>M3<br><tr><td>Flushing Av at Harrison Pl (to Flushing Av)<td>M3<br><tr><td>Flushing Av  [ad]  [J] [M]  <img height=18px src=http://web.mta.info/metrocard/tourism/images/Metrocard.jpg align=right><td>Flushing Av at Broadway<td>M3</table></div></html> <br><br></font><a href=http://web.mta.info/nyct/service/MyrtleAvenue/ target=_blank><font color=#0000FF><b><u>Click here</u></b></font></a> for additional details about the Myrtle Viaduct reconstruction project.<br><br>New [M] timetable with route change. | <a href=http://web.mta.info/nyct/service/pdf/tmcur.pdf target=_blank><font color=#0000FF><b><u>pdf</u></b></font></a> <br><br><br></font><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162510);><b>[M] Essex St-bound trains skip Flushing Av, Lorimer St and Hewes St<br clear=left><font color=#000000>     </font>Trains run every 20 minutes</a><br/><br/><div id= 162510 class=\"plannedWorkDetail\" ></b>Weekend, 6:30 AM to 11 PM, Saturday, Aug 5<br>                       8 AM to 10 PM, Sunday, Aug 6<br><br>For service <i>to</i> these stations, take the [M] to Essex St* and transfer to a <br>Jamaica Center-bound [J] or Brooklyn-bound [M].<br><br>For service <i>from</i> these stations, take the [J] or [M] to Myrtle Av and <br>transfer to an Essex St-bound [M] or Broad St-bound [J].<br><br>&bull; Please allow additional travel time.<br><br><i>*Transfer at Marcy Av with <a href=http://web.mta.info/metrocard/mcgtreng.htm#unlimited target=_blank><font color=#0000FF><b><u>Unlimited Ride MetroCard</u></b></font></a>.<br><br><b>Alternate travel note:<br></b></i>Take the <a href=http://web.mta.info/nyct/bus/schedule/bkln/b046cur.pdf target=_blank><font color=#0000FF><b><u>B46</u></b></font></a> bus via transfer at Marcy Av or Myrtle Av.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159780);><b>[F] Trains run local in both directions between 71 Av and 21 St-Queensbridge</a><br/><br/><div id= 159780 class=\"plannedWorkDetail\" ></b></font>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br>Trains stop at 67 Av, 63 Dr, Woodhaven Blvd, Grand, Elmhurst, Roosevelt Avs,<br>65 St, Northern Blvd, 46, Steinway and 36 Sts.<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> No [F] trains between 71 Av and 179 St during this time.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(159776);><b>[F] No trains between 71 Av and 179 St</a><br/><br/><div id= 159776 class=\"plannedWorkDetail\" >[SB] Free shuttle buses provide alternate service<br></b>Weekends, 11:30 PM Fri to 5 AM Mon, until Aug 7<br><br><b>[F]</b> service operates between <b>Stillwell Av </b>and <b>71 Av</b>.<br>  &bull;  Trains run <i>local</i> in both directions between 21 St-Queensbridge and 71 Av.<br><br>[SB] Buses operate between <b>71 Av </b>and <b>179 St</b>, stopping at 75 Av, Union Tpke, Briarwood,<br>Sutphin Blvd, Parsons Blvd and 169 St.<br>  &bull; Transfer between [F] trains and [SB] buses at 71 Av.<br><br><b>MTA LIRR </b>will cross-honor <a href=http://web.mta.info/metrocard/ target=_blank><font color=#0000FF><b><u>MetroCard</u></b></font></a> for travel between Penn Station and Jamaica <i>or</i> Kew Gardens  LIRR stations. NYCT customers should present their <b>MetroCard </b>to the LIRR conductor.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1597760);>Show Shuttle Bus Stops</a></b></font></font>                           [TP]<div id=\"1597760\"; style=\"display:none;\"></font><table class=plannedworkTableStyle  width=90% border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station</b><td><b>Shuttle Bus Stop</b><td><b>Bus</b><tr><td>71 Av [ad] [E]* [F] <td>Queens Blvd at 71 Av<td><b>Q60</b><tr><td>75 Av<td>Queens Blvd at 75 Av<td><b>Q60</b><tr><td rowspan=2>Union Tpke<td>Queens Blvd at 80 Rd<td><b>Q60</b><tr><td>Queens Blvd at 78 Av<td><b>Q60</b><tr><td rowspan=2>Briarwood<td>Queens Blvd at 84 Dr (to 179 St)<td><b>Q20B</b><tr><td>Queens Blvd at Main St (to 71 Av)<td>&mdash;<tr><td>Sutphin Blvd<td>Hillside Av at Sutphin Blvd<td>&mdash;<tr><td>Parsons Blvd<td>Hillside Av at Parsons Blvd<td><b>Q43</b><tr><td>169 St<td>Hillside Av at 169 St<td><b>Q17</b><tr><td>179 St<td>Hillside Av at Edgerton Blvd<td>&mdash;</table><br><br><i>*No [E] service between 71 Av and Jamaica Center during this time.</i></div><br><br><b>Note:</b> No [R] service between Queens Plaza and 71 Av during this time<i>.<br></i><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162489);><b>[D] Service operates in two sections and is rerouted in Manhattan</a><br/><br/><div id= 162489 class=\"plannedWorkDetail\" >[F] [N] [Q] [R] trains and [SB] free shuttle buses provide alternate service<br></b>Weekend, 11:30 PM Fri to 5 AM Mon, Aug 4 - 7<br><br>No [D] service at <b>7 Av</b>,<b> 47-50 Sts</b>,<b> 42 St-Bryant Pk</b>,<b> 34 St-Herald Sq</b>, <b>Grand St </b>and<b> DeKalb Av</b>.<br><br><b>[D] service operates in two sections:<br></b></font>  1. Between<b> 205 St </b>and<b> B'way-Lafayette St, </b>and via the [F] <i>to/from</i> 2 Av<br>      &bull; <i>Trains run via the [A] local in both directions between 59 St-Columbus Circle and W 4 St. <br></i>  2. Between<b> Atlantic Av-Barclays Ctr </b>and<b> Stillwell Av<br>      </b>&bull; <i>Trains skip Union St, 4 Av-9 St and 25 St in both directions.<br><br></i>[SB] Buses operate between <b>W 4 St</b> and <b>Grand St</b>, stopping at <b>B'way-Lafayette St</b>.<br><br><font size=3><b><a style=\"cursor:pointer; text-decoration:underline;\" onclick=ShowHide(1624890);>Show Shuttle Bus Stops</a></b></font><div id=\"1624890\"; style=\"display:none;\"> <table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=3 rules=rows frame=hsides><tr bgcolor=#FAF8CC><td><b>Station      </b></td><td><b>Bus Stop</b><td><b>Bus</b><tr><td>W 4 St [ad] [A] [C] [D] [E] [F]      <td>6 Av at W 3 St<td><b>M55</b><tr><td>B'way-Lafayette St [ad] [D] [F]  <td>Houston St at Broadway<td><b>M21</b><tr><td>Grand St<td>Grand St at Chrystie St  <td align=center>&mdash;</table></div><br><br><b> </b></font><table class=plannedworkTableStyle  width=80%><tr><td><font size=3><b>Travel Alternatives</b></font><td align=right>[TP]</table><br>For service between<b> Manhattan </b>and<b> Brooklyn</b>, take the [N] or [Q].<br>  </font>&bull; Transfer between [D] and [N] [Q] trains via the passageway at Times Sq-42 St/Port Authority.<br>  &bull; In Brooklyn, transfer between [D] and [N] [Q] trains at Atlantic Av-Barclays Ctr.<br>  &bull; Transfer between [N] [Q] and [F] at 34 St-Herald Sq.<br><br>For <b>7 Av</b>, take the [E] via transfer at Times Sq-42 St/Port Authority.<br><br></font>For <b>47-50 Sts</b>, <b>42 St-Bryant Pk</b> and <b>34 St-Herald Sq</b> take the [F].  <br>  &bull; </font>Transfer between [D] and [F] trains at W 4 St.<br>  &bull; Transfer between [N] [Q] and [F] trains at 34 St-Herald Sq.<br><br>For <b>Grand St</b>, take a [SB] bus via transfer at W 4 St or B'way-Lafayette St.<br><br>For <b>DeKalb Av</b>, take the [N] [Q] or [R]  instead via transfer at Atlantic Av-Barclays Ctr or <br>Times Sq 42 St/Port Authority.<br><br>For <b>Union St</b>, <b>4 Av-9 St</b> and <b>25 St</b>, take the [N] or [R] instead. <br>  </font>&bull; Transfer between [D] and [N] [R] trains at 36 St.<br><br><b>Note:</b> </font>Prospect Av is closed for renovation.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161284);><b>[D] Manhattan-bound trains skip 182-183 Sts</a><br/><br/><div id= 161284 class=\"plannedWorkDetail\" ></b>Weekends, 11:45 PM Fri to 5 AM Mon, until Aug 28<br><br>For service <i>to</i> this station, take the [D] to Tremont Av and transfer to a Norwood-bound [D].<br><br>For service <i>from</i> this station, take the [D] to Fordham Rd and transfer to a Manhattan-bound [D].<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 4:00PM"
+        },
+        {
+            "name": "G",
+            "status": "GOOD SERVICE",
+            "text": "",
+            "Date": "",
+            "Time": ""
+        },
+        {
+            "name": "JZ",
+            "status": "PLANNED WORK",
+            "text": "\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162508);><b>[J] Broad St-bound trains skip Flushing Av, Lorimer St and Hewes St</a><br/><br/><div id= 162508 class=\"plannedWorkDetail\" ></b>Weekend, 3:45 AM Sat to 10 PM Sun, Aug 5 - 6<br><br></font>For service <i>to</i> these stations, take the [J] to Essex St* and transfer to a Jamaica Center-bound [J] or<br>Brooklyn-bound [M].<br><br>For service<i> from</i> these stations, take the [J] or [M] to Myrtle Av and transfer to a Broad St-bound [J].<br><br><i>*Transfer at Marcy Av with <a href=http://web.mta.info/metrocard/mcgtreng.htm#unlimited target=_blank><font color=#0000FF><b><u>Unlimited Ride MetroCard</u></b></font></a>.<br><br><b>Alternate travel note:<br></b></i>Take the <a href=http://web.mta.info/nyct/bus/schedule/bkln/b046cur.pdf target=_blank><font color=#0000FF><b><u>B46</u></b></font></a> bus via transfer at Marcy Av or Myrtle Av.<br><br><table class=plannedworkTableStyle  border=1 cellspacing=1 cellpadding=5 rules=none frame=box><td>  [ad]  <td><font size=1>This service change affects one or more ADA accessible stations. Please call 511 for help with planning<br>your trip. If you are deaf or hard of hearing, use your preferred relay service provider or the free 711 relay.  </font></table><br><b><br><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 6:12PM"
+        },
+        {
+            "name": "L",
+            "status": "GOOD SERVICE",
+            "text": "",
+            "Date": "",
+            "Time": ""
+        },
+        {
+            "name": "NQR",
+            "status": "PLANNED WORK",
+            "text": "\r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(161702);><b>[R] No trains between Queens Plaza and 71 Av<br clear=left>[E] [F] trains provide alternate service</a><br/><br/><div id= 161702 class=\"plannedWorkDetail\" ></b></font><a href=http://advisory.mtanyct.info/pdf_files/ServiceGuide.pdf target=_blank><font color=#0000FF><b><u>Weekend</u></b></font></a>, Saturday <i>and</i> Sunday, Aug 5 - 6<br><br>[R] service operates between <b>Bay Ridge-95 St </b>and <b>Queens Plaza</b>, <i>days and evenings</i>.<br><br>For local service in Queens, take the [E] or [F] instead.<br>  <br>&bull; Transfer between [E] and [R] trains at Queens Plaza.<br>&bull; Transfer between [F] and [R] trains at 34 St-Herald Sq.<br><br><b>Notes</b>: [E] trains run local between Queens Plaza and 71 Av <i>all weekend</i>.<br>           [F] trains run local between 36 St and 71 Av all <i>weekend</i>.<br></font><b><br></div></b><br/>\r\n                <br/><br/>\r\n              \r\n                    <span class=\"TitlePlannedWork\" >Planned Work</span>\r\n                    <br/>\r\n                  <a class=\"plannedWorkDetailLink\" onclick=ShowHide(162495);><b>[N] Trains run local in both directions between DeKalb Av and 59 St, Brooklyn</a><br/><br/><div id= 162495 class=\"plannedWorkDetail\" ></b></font>Weekend, 12:01 AM Sat to 5 AM Mon, Aug 5 - 7<br><br>&bull; Please allow additional travel time.<br><br><b>Note:</b> Prospect Av and 53 St are closed for renovation.<br><b><br></div></b><br/>\r\n                <br/><br/>\r\n              ",
+            "Date": "08/06/2017",
+            "Time": " 6:12PM"
+        },
+        {
+            "name": "S",
+            "status": "GOOD SERVICE",
+            "text": "",
+            "Date": "",
+            "Time": ""
+        },
+        {
+            "name": "SIR",
+            "status": "GOOD SERVICE",
+            "text": "",
+            "Date": "",
+            "Time": ""
+        }
+    ],
+    "tweets": [
+        {
+            "created_at": "Sun Aug 06 22:22:20 +0000 2017",
+            "id": 894322779113357300,
+            "id_str": "894322779113357312",
+            "text": "Minha mãe disse que era p eu deletar meu facebook pq tem mta foto feia lá 😂😂😂😂",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1497271789,
+                "id_str": "1497271789",
+                "name": "Amanda Vitória",
+                "screen_name": "amandaapinho",
+                "location": "Brasil",
+                "description": "🌸🌸🌸",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 272,
+                "friends_count": 359,
+                "listed_count": 0,
+                "created_at": "Mon Jun 10 03:29:45 +0000 2013",
+                "favourites_count": 6546,
+                "utc_offset": -7200,
+                "time_zone": "Mid-Atlantic",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 4102,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/894058444151500802/cnDsy3E5_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/894058444151500802/cnDsy3E5_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1497271789/1501708743",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": {
+                "id": "ef4296e721b70dfe",
+                "url": "https://api.twitter.com/1.1/geo/id/ef4296e721b70dfe.json",
+                "place_type": "city",
+                "name": "Boa Vista",
+                "full_name": "Boa Vista, Brazil",
+                "country_code": "BR",
+                "country": "Brazil",
+                "contained_within": [],
+                "bounding_box": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -61.000632,
+                                2.427858
+                            ],
+                            [
+                                -60.2877575,
+                                2.427858
+                            ],
+                            [
+                                -60.2877575,
+                                3.606091
+                            ],
+                            [
+                                -61.000632,
+                                3.606091
+                            ]
+                        ]
+                    ]
+                },
+                "attributes": {}
+            },
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "pt"
+        },
+        {
+            "created_at": "Sun Aug 06 22:22:14 +0000 2017",
+            "id": 894322752177524700,
+            "id_str": "894322752177524737",
+            "text": "mano só to saindo com mlk q tem carro, é mta sorte",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 331244986,
+                "id_str": "331244986",
+                "name": "andie",
+                "screen_name": "whosendi",
+                "location": "São Paulo, Brasil",
+                "description": "avassaladora uma mina interessante\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsnap: andieoliveira",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 717,
+                "friends_count": 445,
+                "listed_count": 0,
+                "created_at": "Thu Jul 07 21:37:44 +0000 2011",
+                "favourites_count": 1674,
+                "utc_offset": -10800,
+                "time_zone": "Brasilia",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 7444,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000124353842/9146ac7da9d30ee84f82332b0e94d9da.jpeg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000124353842/9146ac7da9d30ee84f82332b0e94d9da.jpeg",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/892856142296109057/aqbL1CwN_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/892856142296109057/aqbL1CwN_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/331244986/1501254473",
+                "profile_link_color": "ABB8C2",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "E5507E",
+                "profile_text_color": "362720",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "pt"
+        },
+        {
+            "created_at": "Sun Aug 06 22:22:07 +0000 2017",
+            "id": 894322722830000100,
+            "id_str": "894322722830000128",
+            "text": "Mais de duas semanas sem wi fi\nVtnc\nDesgraçaaaaaaaaaaaaaaaaaaa\nAaaaaaaaaa\nMerda\nAaaaaaaaa\nTo com mta raivaaaa",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 888888078106079200,
+                "id_str": "888888078106079232",
+                "name": "Asmina",
+                "screen_name": "AsminaMoon",
+                "location": "Vila Velha - ES",
+                "description": "🌈 Fight like a girl 🌈",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 45,
+                "friends_count": 138,
+                "listed_count": 0,
+                "created_at": "Sat Jul 22 22:26:47 +0000 2017",
+                "favourites_count": 462,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 139,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/891448485358313472/w58cs9Gj_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/891448485358313472/w58cs9Gj_normal.jpg",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "pt"
+        }
+    ]
+}
