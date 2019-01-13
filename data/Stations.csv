@@ -328,7 +328,7 @@ Station ID,Complex ID,GTFS Stop ID,Division,Line,Stop Name,Borough,Daytime Route
 325,325,135,IRT,Broadway - 7Av,Canal St,M,1,Subway,40.722854,-74.006277
 326,326,136,IRT,Broadway - 7Av,Franklin St,M,1,Subway,40.719318,-74.006886
 327,327,137,IRT,Broadway - 7Av,Chambers St,M,1 2 3,Subway,40.715478,-74.009266
-328,328,138,IRT,Broadway - 7Av,Cortlandt St,M,1,Subway,40.711835,-74.012188
+328,328,138,IRT,Broadway - 7Av,WTC Cortlandt,M,1,Subway,40.711835,-74.012188
 329,329,139,IRT,Broadway - 7Av,Rector St,M,1,Subway,40.707513,-74.013783
 330,635,142,IRT,Broadway - 7Av,South Ferry,M,1,Subway,40.702068,-74.013664
 331,624,228,IRT,Clark St,Park Pl,M,2 3,Subway,40.713051,-74.008811
