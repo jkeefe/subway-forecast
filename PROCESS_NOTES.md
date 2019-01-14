@@ -81,4 +81,8 @@ http://web.mta.info/developers/MTA-Subway-Time-historical-data.html
 
 http://web.mta.info/developers/data/nyct/subway/Stations.csv
 
+## Database ...
+
+Looking into storing this all in RDS / MySQL on Amazon web services -- partly because then I can just import the data directly from AWS into a pandas dataframe. See this: https://datascience-enthusiast.com/R/AWS_RDS_R_Python.html
+
 
