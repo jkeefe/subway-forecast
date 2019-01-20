@@ -2977,12 +2977,12 @@ Instead, how about keeping every station-direction-line-timestamp time ... allow
 So we could actually build that table above from time-based queries of the following:
 
     id: INTEGER
-    timestamp: TIMESTAMP
+    timestamp: DATETIME
     timestamp_unix: INTEGER
-    line: CHAR(1)
+    line: VARCHAR(3)
     station: CHAR(3)
     direction: CHAR(1)
-    order: TINYINT
+    sequence: TINYINT
     away: INTEGER
     delay: INTEGER
     

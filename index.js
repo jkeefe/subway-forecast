@@ -64,14 +64,17 @@ var data_feeds = [
     
 ];
 
-var new_record = {};
+var directions = ["N","S"];
 
+var new_record = {};
 
 exports.handler = function(event, context, callback){ 
 
     // funtional code goes here ... with the 'event' and 'context' coming from
     // whatever calls the lambda function (like CloudWatch or Alexa function).
     // callback function goes back to the caller.
+    
+    new_record = {};
     
     var tweet_options = {
         q: 'MTA OR @NYCTsubway OR (subway AND nyc) -RT',
@@ -141,17 +144,15 @@ function getSubwayTimes() {
     return new Promise ((resolve, reject) => {
 
         var now = moment();
+        var snapshotUnix = +now.format("X"); // + for the integer
+        var snapshotUTC = now.utc().format("YYYY-MM-DD HH:mm:ss.S");
+        var snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss.S");
         
-        new_record.fetched = {
-            "unix": now.format("X"),
-            "mills": now.format("x"),
-            "utc": now.utc().format("YYYY-MM-DDTHH:mm:ssZ"),
-            "nyc": now.tz("America/New_York").format("YYYY-MM-DDTHH:mm:ss"),
-            "dow": now.tz("America/New_York").format("e"), // 0-6
-            "hour": now.tz("America/New_York").format("H"),
-            "min": now.tz("America/New_York").format("m")
+        new_record.snapshot = {
+            "unix": snapshotUnix,
+            "utc": snapshotUTC,
+            "nyc": snapshotNYC
         };
-        new_record.csv_row = {};
         
         // loop through all the data feeds 
         data_feeds.forEach( (feed) => {
@@ -165,60 +166,81 @@ function getSubwayTimes() {
             mta.schedule(feed.gtfs_stop_id).then(function (result) {
                 console.log(`Got Schedule for feed ID ${feed.feed_id} lines ${feed.train_lines}`);
                 
+                // store this in the new_record by feed number for S3 archive
                 new_record[feed.feed_id] = {};
                 new_record[feed.feed_id].rawdata = result;
 
                 // loop through the stops in this feed
-                feed.gtfs_stop_id.forEach((stop_number) => {
-                    
-                    // loop through the train lines normally this at that stop
-                    station_lines[stop_number].forEach( (train_line) => {
+                // but take as the keys that are returned, not requested
+                // (in case we didn't get all of them back).
+                var feed_stops = Object.keys(result.schedule);
+                
+                feed_stops.forEach( (stop_number) => { 
+                
+                    // loop through the direction objects for that stop (N and S)
+                    directions.forEach( (direction) => {
                         
-                        // only continue if the line in question is included in this feed
-                        if (feed.train_lines.includes(train_line)){
+                        var trainLineOrders = {};
+                        
+                        // loop through all the items in the station+direction
+                        for (var i = 0; i < result.schedule[stop_number][direction].length; i++) {
                             
-                            var nb_station = stop_number + "_N";
-                            var sb_station = stop_number + "_S";
-                            var nb_minutes = null;
-                            var sb_minutes = null;
-                            var nb_delay = null;
-                            var sb_delay = null;
+                            var train = result.schedule[stop_number][direction][i];
                             
-                            // find the first train in the set that matches train_line
-                            // and also has an arrival time
-                            for (var i = 0; i < result.schedule[stop_number].N.length; i++) {
-                                
-                                if (result.schedule[stop_number].N[i].routeId == train_line && result.schedule[stop_number].N[i].arrivalTime != null) {
-                                    
-                                    nb_minutes = Math.round( moment.unix(result.schedule[stop_number].N[i].arrivalTime).diff(moment.unix(result.updatedOn), 'minutes', true) * 100)/100;
-                                    nb_delay = result.schedule[stop_number].N[i].delay;
-                                    break;
-                                
-                                }
-                                
+                            // calculate the trainOrderLine, which is the sequence in which
+                            // this train will arrive for *this* line. Zero-indexed. 
+                            // For example:
+                            
+                            // routeId: 'A'
+                            // stationIdGTFS: (14th street's ID)
+                            // direction: 'N'
+                            // trainOrderLine: 0
+                            // trainOrderAll: 2
+
+                            // ... means this A train will be the next A train to arrive at 
+                            // 14th street but the 3rd train overall So C and/or E
+                            // trains are arriving before the A.
+                            
+                            if (!trainLineOrders.hasOwnProperty(train.routeId)) {
+                                trainLineOrders[train.routeId] = 0;
+                            } else {
+                                trainLineOrders[train.routeId]++;
                             }
                             
-                            for (var j = 0; j < result.schedule[stop_number].S.length; j++) {
+                            // if there's an arrival time, calculate time_to_arrival 
+                            var time_to_arrival = null;
+                            if (train.arrivalTime) {
+                                time_to_arrival = train.arrivalTime - result.updatedOn;
+                            }
                                 
-                                if (result.schedule[stop_number].S[j].routeId == train_line && result.schedule[stop_number].S[j].arrivalTime != null) {
-                                    
-                                    sb_minutes = Math.round( moment.unix(result.schedule[stop_number].S[j].arrivalTime).diff(moment.unix(result.updatedOn), 'minutes', true) * 100) / 100;
-                                    sb_delay = result.schedule[stop_number].S[i].delay;
-                                    break;
-                                
-                                }
-                                
+                            // if there's an departure time, calculate time_to_arrival 
+                            var time_to_departure = null;
+                            if (train.departureTime) {
+                                time_to_departure = train.departureTime - result.updatedOn;
                             }
                             
-                            new_record.csv_row[`${train_line}_${nb_station}_minutes`] = nb_minutes;
-                            new_record.csv_row[`${train_line}_${nb_station}_delay`] = nb_delay;
-                            new_record.csv_row[`${train_line}_${sb_station}_minutes`] = sb_minutes;
-                            new_record.csv_row[`${train_line}_${sb_station}_delay`] = sb_delay;
+                            // this will be the record-posting part
+                            console.log(`
+                                ---
+                                snapshotUTC: DATETIME ${snapshotUTC}
+                                snapshotNYC: DATETIME ${snapshotNYC}
+                                snapshotUnix: INTEGER ${snapshotUnix}
+                                routeId: VARCHAR(3) ${train.routeId}
+                                stationIdGTFS: VARCHAR(3) ${stop_number}
+                                direction: CHAR(1) ${direction}
+                                trainOrderLine: TINYINT ${trainLineOrders[train.routeId]}
+                                trainOrderAll: TINYINT ${i}
+                                arrivalTime: INTEGER ${train.arrivalTime}
+                                departureTime: INTEGER ${train.departureTime}
+                                updatedOn: INTEGER ${result.updatedOn}
+                                timeToArrival: INTEGER ${time_to_arrival}
+                                timeToDeparture: INTEGER ${time_to_departure}
+                                `);
                             
                         }
-                                
+                        
                     });
-                    
+                
                 });
                             
             }).catch( (err) => {
