@@ -14,13 +14,7 @@ var bot = new Twit({
 });
 
 
-
-// var f_train_stops = [167,221,222,223,224,225,226,227,228,229,230,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,267];
-// 
-// var train_line = "1";
-// var train_stops = [101,103,104,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,142];
-
-var data_feeds = [
+var feed_definitions = [
     {
         "feed_id": 1,
         "train_lines": ["1", "2", "3", "4", "5", "6", "S"],
@@ -66,7 +60,7 @@ var data_feeds = [
 
 var directions = ["N","S"];
 
-var new_record = {};
+var s3_snapshot = {};
 
 exports.handler = function(event, context, callback){ 
 
@@ -74,25 +68,23 @@ exports.handler = function(event, context, callback){
     // whatever calls the lambda function (like CloudWatch or Alexa function).
     // callback function goes back to the caller.
     
-    new_record = {};
-    
     var tweet_options = {
-        q: 'MTA OR @NYCTsubway OR (subway AND nyc) -RT',
-        count: 100,
-        result_type: 'recent',
+        q: '@MTA OR @NYCTsubway OR #mta OR #nycsubway -RT',
+        count: 100
     };
     
     // could do this as an allPromise, and write once everything comes back.
     
     getTweets(tweet_options)
     .then(getSubwayTimes())
-    .then(getSubwayStatus())
+    //.then(storeSubwayTimes())
+    //.then(getSubwayStatus())
     .then(function(){
         // format is callback(error, response);
-        callback(null, new_record);
+        callback(null, s3_snapshot);
     })
-    .catch(function(){
-        console.log("Promise problem!");
+    .catch(function(error){
+        console.log(`Promise problem in main loop: ${error}`);
         callback("Promise Error!");
     });
         
@@ -116,12 +108,14 @@ function getTweets(options) {
             
             data.statuses.forEach(function(tweet){
                 
+                // console.log(tweet.text);
+                
                 // Tweet time created_at format: Sun Aug 06 18:14:56 +0000 2017
                 var tweet_time = moment(tweet.created_at, "ddd MMM DD HH:mm:ss ZZ YYYY");
                 
                 var time_difference = time_now.diff(tweet_time, "seconds");
                 
-                // only get tweets that are less than 60 seconds old
+                // only save tweets that are less than 60 seconds old
                 if (time_difference < 60) {
                     mostest_latest.push(tweet);
                     // console.log("Time difference: ", time_difference);
@@ -131,7 +125,7 @@ function getTweets(options) {
             
             // add to the global record
             console.log("Got tweets.");
-            new_record.tweets = mostest_latest;
+            s3_snapshot.tweets = mostest_latest;
             
             resolve();
             return;
@@ -148,110 +142,139 @@ function getSubwayTimes() {
         var snapshotUTC = now.utc().format("YYYY-MM-DD HH:mm:ss.S");
         var snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss.S");
         
-        new_record.snapshot = {
+        var record_collection = [];
+        
+        //
+        s3_snapshot.times = {
             "unix": snapshotUnix,
             "utc": snapshotUTC,
             "nyc": snapshotNYC
         };
         
-        // loop through all the data feeds 
-        data_feeds.forEach( (feed) => {
-            
-            var mta = new Mta({
-                key: keys.MTA_API_KEY,   // only needed for mta.schedule() method
-                feed_id: feed.feed_id    // optional, default = 1; F line is in id 21
-            });
-            
-            // hit each MTA feed endpoint
-            mta.schedule(feed.gtfs_stop_id).then(function (result) {
-                console.log(`Got Schedule for feed ID ${feed.feed_id} lines ${feed.train_lines}`);
-                
-                // store this in the new_record by feed number for S3 archive
-                new_record[feed.feed_id] = {};
-                new_record[feed.feed_id].rawdata = result;
-
-                // loop through the stops in this feed
-                // but take as the keys that are returned, not requested
-                // (in case we didn't get all of them back).
-                var feed_stops = Object.keys(result.schedule);
-                
-                feed_stops.forEach( (stop_number) => { 
-                
-                    // loop through the direction objects for that stop (N and S)
-                    directions.forEach( (direction) => {
-                        
-                        var trainLineOrders = {};
-                        
-                        // loop through all the items in the station+direction
-                        for (var i = 0; i < result.schedule[stop_number][direction].length; i++) {
-                            
-                            var train = result.schedule[stop_number][direction][i];
-                            
-                            // calculate the trainOrderLine, which is the sequence in which
-                            // this train will arrive for *this* line. Zero-indexed. 
-                            // For example:
-                            
-                            // routeId: 'A'
-                            // stationIdGTFS: (14th street's ID)
-                            // direction: 'N'
-                            // trainOrderLine: 0
-                            // trainOrderAll: 2
-
-                            // ... means this A train will be the next A train to arrive at 
-                            // 14th street but the 3rd train overall So C and/or E
-                            // trains are arriving before the A.
-                            
-                            if (!trainLineOrders.hasOwnProperty(train.routeId)) {
-                                trainLineOrders[train.routeId] = 0;
-                            } else {
-                                trainLineOrders[train.routeId]++;
-                            }
-                            
-                            // if there's an arrival time, calculate time_to_arrival 
-                            var time_to_arrival = null;
-                            if (train.arrivalTime) {
-                                time_to_arrival = train.arrivalTime - result.updatedOn;
-                            }
-                                
-                            // if there's an departure time, calculate time_to_arrival 
-                            var time_to_departure = null;
-                            if (train.departureTime) {
-                                time_to_departure = train.departureTime - result.updatedOn;
-                            }
-                            
-                            // this will be the record-posting part
-                            console.log(`
-                                ---
-                                snapshotUTC: DATETIME ${snapshotUTC}
-                                snapshotNYC: DATETIME ${snapshotNYC}
-                                snapshotUnix: INTEGER ${snapshotUnix}
-                                routeId: VARCHAR(3) ${train.routeId}
-                                stationIdGTFS: VARCHAR(3) ${stop_number}
-                                direction: CHAR(1) ${direction}
-                                trainOrderLine: TINYINT ${trainLineOrders[train.routeId]}
-                                trainOrderAll: TINYINT ${i}
-                                arrivalTime: INTEGER ${train.arrivalTime}
-                                departureTime: INTEGER ${train.departureTime}
-                                updatedOn: INTEGER ${result.updatedOn}
-                                timeToArrival: INTEGER ${time_to_arrival}
-                                timeToDeparture: INTEGER ${time_to_departure}
-                                `);
-                            
-                        }
-                        
-                    });
-                
-                });
-                            
-            }).catch( (err) => {
-                console.log(`Ooopsie: ${err}`);
-            });
-            
+        // build a promise list fetching each feed from the MTA
+        var promise_list = [];
+        feed_definitions.forEach( (feed_deets) => {
+            promise_list.push(getMtaFeed(feed_deets));
         });
         
-        // console.log(JSON.stringify(new_record.times));
-        resolve();
+        Promise.all(promise_list)
+            .then( (results) => {
+                
+                // loop through all of the feed results we got back
+                results.forEach( (result) => {
+                
+                    // loop through the stops we got back for this feed.
+                    var feed_stops = Object.keys(result.schedule);
+                    feed_stops.forEach( (stop_number) => { 
+                    
+                        // loop through the direction objects for that stop (N and S)
+                        directions.forEach( (direction) => {
+                            
+                            var trainLineOrders = {};
+                            
+                            // loop through all the items in the station+direction
+                            for (var i = 0; i < result.schedule[stop_number][direction].length; i++) {
+                                
+                                var train = result.schedule[stop_number][direction][i];
+                                
+                                // calculate the trainOrderLine, which is the sequence in which
+                                // this train will arrive for *this* line. Zero-indexed. 
+                                // For example:
+                                
+                                // routeId: 'A'
+                                // stationIdGTFS: (14th street's ID)
+                                // direction: 'N'
+                                // trainOrderLine: 0
+                                // trainOrderAll: 2
 
+                                // ... means this A train will be the next A train to arrive at 
+                                // 14th street but the 3rd train overall So C and/or E
+                                // trains are arriving before the A.
+                                
+                                if (!trainLineOrders.hasOwnProperty(train.routeId)) {
+                                    trainLineOrders[train.routeId] = 0;
+                                } else {
+                                    trainLineOrders[train.routeId]++;
+                                }
+                                
+                                // if there's an arrival time, calculate time_to_arrival 
+                                var time_to_arrival = null;
+                                if (train.arrivalTime) {
+                                    time_to_arrival = train.arrivalTime - result.updatedOn;
+                                }
+                                    
+                                // if there's an departure time, calculate time_to_arrival 
+                                var time_to_departure = null;
+                                if (train.departureTime) {
+                                    time_to_departure = train.departureTime - result.updatedOn;
+                                }
+                                
+                                // this will be the record-posting part
+                                // console.log(`
+                                //     ---
+                                //     snapshotUTC: DATETIME ${snapshotUTC}
+                                //     snapshotNYC: DATETIME ${snapshotNYC}
+                                //     snapshotUnix: INT ${snapshotUnix}
+                                //     routeId: VARCHAR(3) ${train.routeId}
+                                //     stationIdGTFS: VARCHAR(3) ${stop_number}
+                                //     direction: CHAR(1) ${direction}
+                                //     trainOrderLine: TINYINT ${trainLineOrders[train.routeId]}
+                                //     trainOrderAll: TINYINT ${i}
+                                //     arrivalTime: INT(10) UNSIGNED ${train.arrivalTime}
+                                //     departureTime: INT(10) UNSIGNED ${train.departureTime}
+                                //     updatedOn: INT(10) UNSIGNED ${result.updatedOn}
+                                //     timeToArrival: SMALLINT ${time_to_arrival}
+                                //     timeToDeparture: SMALLINT ${time_to_departure}
+                                //     `);
+                                
+                                // building insertion record that looks like this:
+                                // INSERT INTO traintimes (snapshotUTC, snapshotNYC, snapshotUnix, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?
+                                
+                                var record = [snapshotUTC, snapshotNYC, snapshotUnix, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure];
+                                
+                                // add to the collection
+                                record_collection.push(record);
+                                
+                            }
+                            
+                        });
+                    
+                    });
+                    
+                
+                
+                });
+                
+            })
+            .then( () => {
+                console.log(record_collection);
+                resolve(record_collection);
+            });
+        
+    });
+}
+
+function getMtaFeed(feed) {
+    return new Promise ((resolve, reject) => {
+        
+        var mta = new Mta({
+            key: keys.MTA_API_KEY,   // only needed for mta.schedule() method
+            feed_id: feed.feed_id    // optional, default = 1; F line is in id 21
+        });
+        
+        // hit each MTA feed endpoint
+        mta.schedule(feed.gtfs_stop_id).then(function (result) {
+            console.log(`Got Schedule for feed ID ${feed.feed_id} lines ${feed.train_lines}`);
+            
+            // store this in the s3_snapshot by feed number for S3 archive
+            s3_snapshot[feed.feed_id] = {};
+            s3_snapshot[feed.feed_id].rawdata = result;
+
+            resolve(result);
+                        
+        }).catch( (err) => {
+            console.log(`Ooopsie: ${err}`);
+        });
     });
 }
 
@@ -264,7 +287,7 @@ function getSubwayStatus() {
         
         mta.status('subway').then(function (result) {
             console.log("Got statuses.");
-            new_record.status = result;
+            s3_snapshot.statuses = result;
             resolve();
         });
     });
