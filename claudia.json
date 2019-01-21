@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "ai-studio-lambda-rds",
+    "name": "ai-studio-subway-forecast",
+    "region": "us-east-1"
+  }
+}

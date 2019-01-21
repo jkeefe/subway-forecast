@@ -136,7 +136,36 @@ will max out the primary key integer at 858993 sets (about a year and a half)
 
 Trying this for the first time: https://javascript.info/async-await
 
+Dreamy!
 
+## Lambda deploy with claudia
+
+- Made IAM role for this `ai-studio-lambda-rds`, including cloudwatch and RDS perms
+- Followed the instructions here, too: https://docs.aws.amazon.com/lambda/latest/dg/vpc-rds.html
+- matched the region to the RDS server
+- had to load the environments into my local setup using `export` for claudia to build right
+
+
+```
+./node_modules/.bin/claudia create --region us-east-1 --handler index.handler --role ai-studio-lambda-rds --runtime nodejs8.10 --timeout 15 --name ai-studio-subway-forecast
+```
+
+- In the lambda console:
+    - Picked the default VPN that matched the RDS instance
+    - Picked 3 subnets that matched the RDS instance
+    - picked the security group that matches the RDS instance
+    
+## VPC land
+
+Looks like I'll need to do this stuff to make my lambda function run on inside the VPC and have access to the internet: https://aws.amazon.com/premiumsupport/knowledge-center/internet-access-lambda-function/
+
+
+
+
+TODO: 
+- Add more error handling
+- Write raw data to S3 using snapshot time as key
+- In another table, store tweets/min using snapshot time as key
 
 
     

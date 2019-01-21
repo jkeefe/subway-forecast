@@ -3,18 +3,41 @@ var Twit = require('twit');
 var moment = require('moment-timezone');
 var Mta = require('mta-gtfs');
 var mysql = require('mysql');
-var keys = require('../keys/subway_watcher_keys');
-var station_lines = require('./data/station-lines.json');
+
+// figure out where to get the secret keys
+var TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET, DB_ENDPOINT, DB_USER, DB_PASS, MTA_API_KEY;
+
+
+// code is on lambda, variables are set there in the console
+// and are available from the process.env call
+TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY;
+TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
+TWITTER_ACCESS_TOKEN = process.env.TWITTER_ACCESS_TOKEN;
+TWITTER_ACCESS_TOKEN_SECRET = process.env.TWITTER_ACCESS_TOKEN_SECRET;
+DB_ENDPOINT = process.env.DB_ENDPOINT;
+DB_USER = process.env.DB_USER;
+DB_PASS = process.env.DB_PASS;
+MTA_API_KEY = process.env.MTA_API_KEY;
+
+
+// // running locally, variables are in a keys file
+// var keys = require('../keys/subway_watcher_keys');
+// TWITTER_CONSUMER_KEY = keys.TWITTER_CONSUMER_KEY;
+// TWITTER_CONSUMER_SECRET = keys.TWITTER_CONSUMER_SECRET;
+// TWITTER_ACCESS_TOKEN = keys.TWITTER_ACCESS_TOKEN;
+// TWITTER_ACCESS_TOKEN_SECRET = keys.TWITTER_ACCESS_TOKEN_SECRET;
+// DB_ENDPOINT = keys.DB_ENDPOINT;
+// DB_USER = keys.DB_USER;
+// DB_PASS = keys.DB_PASS;
+
 
 // Include global variables here (if any)
 var bot = new Twit({
-    consumer_key:         keys.TWITTER_CONSUMER_KEY,
-    consumer_secret:      keys.TWITTER_CONSUMER_SECRET,
-    access_token:         keys.TWITTER_ACCESS_TOKEN,
-    access_token_secret:  keys.TWITTER_ACCESS_TOKEN_SECRET
+    consumer_key:         TWITTER_CONSUMER_KEY,
+    consumer_secret:      TWITTER_CONSUMER_SECRET,
+    access_token:         TWITTER_ACCESS_TOKEN,
+    access_token_secret:  TWITTER_ACCESS_TOKEN_SECRET
 });
-
-
 
 
 var feed_definitions = [
@@ -112,12 +135,16 @@ var feed_definitions = [
 ];
 
 var directions = ["N","S"];
-
 var s3_snapshot;
+var now, snapshotUnix, snapshotNYC;
 
 exports.handler = function(event, context, callback){ 
 
+    // reset all the times and files for this call
     s3_snapshot = {};
+    now = moment();
+    snapshotUnix = +now.format("X"); // + for the integer
+    snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss");
 
     // funtional code goes here ... with the 'event' and 'context' coming from
     // whatever calls the lambda function (like CloudWatch or Alexa function).
@@ -192,18 +219,12 @@ function getTweets(options) {
 async function getSubwayTimes() {
 
     console.log("Getting Subway times");
-
-    var now = moment();
-    var snapshotUnix = +now.format("X"); // + for the integer
-    var snapshotUTC = now.utc().format("YYYY-MM-DD HH:mm:ss");
-    var snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss");
     
     var record_collection = [];
     
     //
     s3_snapshot.times = {
         "unix": snapshotUnix,
-        "utc": snapshotUTC,
         "nyc": snapshotNYC
     };
     
@@ -216,7 +237,15 @@ async function getSubwayTimes() {
     let results = await Promise.all(promise_list);
             
     // loop through all of the feed results we got back
-    results.forEach( (result) => {
+    for (var r = 0; r < results.length; r++) {
+                                
+        var result = results[r];
+        
+        // skip empty results
+        if (!result.hasOwnProperty("schedule")) {
+            console.log (`Schedule key missing in sequence #${r}. Skipping!`);
+            continue;
+        }
                                 
         // loop through the stops we got back for this feed.
         var feed_stops = Object.keys(result.schedule);
@@ -270,7 +299,7 @@ async function getSubwayTimes() {
                     // building insertion record that looks like this:
                     // INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?
                     
-                    var record = [snapshotUnix, snapshotNYC, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure];
+                    var record = [snapshotUnix, snapshotNYC, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure, train.delay];
                     
                     // add to the collection
                     record_collection.push(record);
@@ -280,12 +309,12 @@ async function getSubwayTimes() {
             });
         
         });
-                
-            
-    });
+                    
+    }
             
     console.log("Built record collection.");
 
+    // update the database, passing the array of records (each of which is an array)
     try {
         await updateDatabase(record_collection);
         console.log("Database updated should be done.");
@@ -301,7 +330,7 @@ async function getSubwayTimes() {
 async function getMtaFeed(feed) {
 
     var mta = new Mta({
-        key: keys.MTA_API_KEY,   // only needed for mta.schedule() method
+        key: MTA_API_KEY,   // only needed for mta.schedule() method
         feed_id: feed.feed_id    // optional, default = 1; F line is in id 21
     });
     
@@ -319,9 +348,7 @@ async function getMtaFeed(feed) {
     }
     catch (err) {
         console.log(`Ooopsie with feed ${feed.feed_id} subset ${feed.subset} (${feed.train_lines}): ${err}`);
-        var blank_object = {
-            "schedule": {}
-        };
+        var blank_object = {};
         return blank_object;
     }
 }
@@ -331,7 +358,7 @@ async function getSubwayStatus() {
     console.log("Getting MTA statuses");
     
     var mta = new Mta({
-        key: keys.MTA_API_KEY
+        key: MTA_API_KEY
     });
     
     try {
@@ -343,7 +370,7 @@ async function getSubwayStatus() {
     
     }
     catch (err) {
-        console.log("Error getting MTA status: " + err);
+        console.log("Error getting MTA status report: " + err);
         return;
     }
     
@@ -355,9 +382,9 @@ function updateDatabase(records) {
         console.log("Updatating database.");
         
         var connection = mysql.createConnection({
-            host: keys.DB_ENDPOINT,
-            user: keys.DB_USER,
-            password: keys.DB_PASS,
+            host: DB_ENDPOINT,
+            user: DB_USER,
+            password: DB_PASS,
             database: "subways"
         });
         
@@ -365,7 +392,7 @@ function updateDatabase(records) {
             if (error) throw error;
             console.log("Connected!");
             
-            var sql = 'INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?';
+            var sql = 'INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture, delay) VALUES ?';
                 
             connection.query(sql, [records], function (err, result) {
                 if (err) throw err;
