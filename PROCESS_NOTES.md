@@ -111,11 +111,31 @@ Also remember that if we build these in pandas, with station-direction-line colu
 
 MySQL W3Schools tutorial! https://www.w3schools.com/nodejs/nodejs_mysql_insert.asp
 
+## Size calculation
+
+Storage: 50 GB
+One record set: ~0.5MB
+
+Minutes in a day: 1440
+So 50 GB gets us ~ 69 days
+
+One day is 720 MB
+
+So a year is about 262GB
+
+
+Minutes in a year: 525600
+525600 * 0.5MB = 
+
+Each set is ~5000 rows
+Max primary key integer: 4294967295
+
+will max out the primary key integer at 858993 sets (about a year and a half)
+
+
 
 
     
-
-
     
     
     

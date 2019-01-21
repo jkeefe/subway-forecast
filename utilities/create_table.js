@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
-    var sql = 'CREATE TABLE traintimes (id INT AUTO_INCREMENT PRIMARY KEY, snapshotUTC DATETIME NOT NULL, snapshotNYC DATETIME NOT NULL, snapshotUnix INT(10) UNSIGNED NOT NULL, routeId VARCHAR(3) NOT NULL, stationIdGTFS VARCHAR(3) NOT NULL, direction CHAR(1), trainOrderLine TINYINT, trainOrderAll TINYINT, arrivalTime INT(10) UNSIGNED, departureTime INT(10) UNSIGNED, updatedOn INT(10) UNSIGNED, timeToArrival SMALLINT, timeToDeparture SMALLINT) DEFAULT CHARSET=utf8';
+    var sql = 'CREATE TABLE traintimes (id INT AUTO_INCREMENT PRIMARY KEY, snapshotUnix INT(10) UNSIGNED NOT NULL, snapshotNYC DATETIME NOT NULL, routeId VARCHAR(3) NOT NULL, stationIdGTFS VARCHAR(3) NOT NULL, direction CHAR(1), trainOrderLine TINYINT, trainOrderAll TINYINT, arrivalTime INT(10) UNSIGNED, departureTime INT(10) UNSIGNED, updatedOn INT(10) UNSIGNED, timeToArrival SMALLINT, timeToDeparture SMALLINT) DEFAULT CHARSET=utf8';
     
     connection.query(sql, function (err, result) {
         if (err) throw err;

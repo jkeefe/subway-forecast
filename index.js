@@ -2,6 +2,7 @@
 var Twit = require('twit');
 var moment = require('moment-timezone');
 var Mta = require('mta-gtfs');
+var mysql = require('mysql');
 var keys = require('../keys/subway_watcher_keys');
 var station_lines = require('./data/station-lines.json');
 
@@ -12,6 +13,8 @@ var bot = new Twit({
     access_token:         keys.TWITTER_ACCESS_TOKEN,
     access_token_secret:  keys.TWITTER_ACCESS_TOKEN_SECRET
 });
+
+
 
 
 var feed_definitions = [
@@ -60,9 +63,11 @@ var feed_definitions = [
 
 var directions = ["N","S"];
 
-var s3_snapshot = {};
+var s3_snapshot;
 
 exports.handler = function(event, context, callback){ 
+
+    s3_snapshot = {};
 
     // funtional code goes here ... with the 'event' and 'context' coming from
     // whatever calls the lambda function (like CloudWatch or Alexa function).
@@ -77,8 +82,7 @@ exports.handler = function(event, context, callback){
     
     getTweets(tweet_options)
     .then(getSubwayTimes())
-    //.then(storeSubwayTimes())
-    //.then(getSubwayStatus())
+    .then(getSubwayStatus())
     .then(function(){
         // format is callback(error, response);
         callback(null, s3_snapshot);
@@ -94,6 +98,7 @@ exports.handler = function(event, context, callback){
 // Helper functions can go here
 function getTweets(options) {
     return new Promise((resolve, reject) => {
+        console.log("Getting tweets.");
         
         bot.get('search/tweets', options, function(err, data, response) {
             
@@ -137,10 +142,12 @@ function getTweets(options) {
 function getSubwayTimes() {
     return new Promise ((resolve, reject) => {
 
+        console.log("Getting Subway times");
+
         var now = moment();
         var snapshotUnix = +now.format("X"); // + for the integer
-        var snapshotUTC = now.utc().format("YYYY-MM-DD HH:mm:ss.S");
-        var snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss.S");
+        var snapshotUTC = now.utc().format("YYYY-MM-DD HH:mm:ss");
+        var snapshotNYC = now.tz("America/New_York").format("YYYY-MM-DD HH:mm:ss");
         
         var record_collection = [];
         
@@ -162,7 +169,7 @@ function getSubwayTimes() {
                 
                 // loop through all of the feed results we got back
                 results.forEach( (result) => {
-                
+                                    
                     // loop through the stops we got back for this feed.
                     var feed_stops = Object.keys(result.schedule);
                     feed_stops.forEach( (stop_number) => { 
@@ -174,6 +181,9 @@ function getSubwayTimes() {
                             
                             // loop through all the items in the station+direction
                             for (var i = 0; i < result.schedule[stop_number][direction].length; i++) {
+                                
+                                // bail after the first 6 trains
+                                if (i > 6) break;
                                 
                                 var train = result.schedule[stop_number][direction][i];
                                 
@@ -203,34 +213,16 @@ function getSubwayTimes() {
                                     time_to_arrival = train.arrivalTime - result.updatedOn;
                                 }
                                     
-                                // if there's an departure time, calculate time_to_arrival 
+                                // if there's a departure time, calculate time_to_arrival 
                                 var time_to_departure = null;
                                 if (train.departureTime) {
                                     time_to_departure = train.departureTime - result.updatedOn;
                                 }
                                 
-                                // this will be the record-posting part
-                                // console.log(`
-                                //     ---
-                                //     snapshotUTC: DATETIME ${snapshotUTC}
-                                //     snapshotNYC: DATETIME ${snapshotNYC}
-                                //     snapshotUnix: INT ${snapshotUnix}
-                                //     routeId: VARCHAR(3) ${train.routeId}
-                                //     stationIdGTFS: VARCHAR(3) ${stop_number}
-                                //     direction: CHAR(1) ${direction}
-                                //     trainOrderLine: TINYINT ${trainLineOrders[train.routeId]}
-                                //     trainOrderAll: TINYINT ${i}
-                                //     arrivalTime: INT(10) UNSIGNED ${train.arrivalTime}
-                                //     departureTime: INT(10) UNSIGNED ${train.departureTime}
-                                //     updatedOn: INT(10) UNSIGNED ${result.updatedOn}
-                                //     timeToArrival: SMALLINT ${time_to_arrival}
-                                //     timeToDeparture: SMALLINT ${time_to_departure}
-                                //     `);
-                                
                                 // building insertion record that looks like this:
-                                // INSERT INTO traintimes (snapshotUTC, snapshotNYC, snapshotUnix, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?
+                                // INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?
                                 
-                                var record = [snapshotUTC, snapshotNYC, snapshotUnix, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure];
+                                var record = [snapshotUnix, snapshotNYC, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure];
                                 
                                 // add to the collection
                                 record_collection.push(record);
@@ -242,15 +234,14 @@ function getSubwayTimes() {
                     });
                     
                 
-                
                 });
-                
+                console.log("Built record collection.");
             })
+            .then(updateDatabase(record_collection))
             .then( () => {
-                console.log(record_collection);
-                resolve(record_collection);
+                console.log("Database update should be done.");
+                resolve();
             });
-        
     });
 }
 
@@ -273,13 +264,19 @@ function getMtaFeed(feed) {
             resolve(result);
                         
         }).catch( (err) => {
-            console.log(`Ooopsie: ${err}`);
+            console.log(`Ooopsie with feed ${feed.feed_id} (${feed.train_lines}): ${err}`);
+            var blank_object = {
+                "schedule": {}
+            };
+            resolve(blank_object);
         });
     });
 }
 
 function getSubwayStatus() {
     return new Promise ((resolve, reject) => {
+        
+        console.log("Getting MTA statuses");
         
         var mta = new Mta({
             key: keys.MTA_API_KEY
@@ -289,6 +286,42 @@ function getSubwayStatus() {
             console.log("Got statuses.");
             s3_snapshot.statuses = result;
             resolve();
+        });
+    });
+}
+
+function updateDatabase(records) {
+    return new Promise ((resolve, reject) => {
+        
+        console.log("Updatating database.");
+        
+        var connection = mysql.createConnection({
+            host: keys.DB_ENDPOINT,
+            user: keys.DB_USER,
+            password: keys.DB_PASS,
+            database: "subways"
+        });
+        
+        connection.connect(function(error) {
+            if (error) throw error;
+            console.log("Connected!");
+            
+            var sql = 'INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?';
+                
+            connection.query(sql, [records], function (err, result) {
+                if (err) throw err;
+                console.log(`Insert Result: ${JSON.stringify(result)}`);
+                connection.end(function(err) {
+                    
+                    if (err) {
+                        console.log("Database update error:" + err);
+                        reject(err);
+                    }
+                    
+                    console.log("Connection closed.");
+                    resolve();
+                });
+            });
         });
     });
 }
