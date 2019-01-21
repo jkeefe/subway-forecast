@@ -132,6 +132,10 @@ Max primary key integer: 4294967295
 
 will max out the primary key integer at 858993 sets (about a year and a half)
 
+## Async / Await
+
+Trying this for the first time: https://javascript.info/async-await
+
 
 
 
