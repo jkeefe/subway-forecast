@@ -160,13 +160,14 @@ exports.handler = function(event, context, callback){
     getTweets(tweet_options)
     .then(getSubwayTimes())
     .then(getSubwayStatus())
+    // .then(writeS3file(s3_snapshot))
     .then(function(){
         // format is callback(error, response);
-        callback(null, s3_snapshot);
+        callback(null, "OK");
     })
     .catch(function(error){
         console.log(`Promise problem in main loop: ${error}`);
-        callback("Promise Error!");
+        callback(error);
     });
         
 
