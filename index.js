@@ -288,12 +288,26 @@ async function getSubwayTimes() {
                     var time_to_arrival = null;
                     if (train.arrivalTime) {
                         time_to_arrival = train.arrivalTime - result.updatedOn;
+                        
+                        // if this value is more than 15 mins in the past,
+                        // we're assuming it's a machine error or no more trains
+                        // are running, so null.
+                        if (time_to_arrival < -900) {
+                            time_to_arrival = null;
+                        }
                     }
                         
                     // if there's a departure time, calculate time_to_arrival 
                     var time_to_departure = null;
                     if (train.departureTime) {
                         time_to_departure = train.departureTime - result.updatedOn;
+                        
+                        // if this value is more than 15 mins in the past,
+                        // we're assuming it's a machine error or no more trains
+                        // are running, so null.
+                        if (time_to_departure < -900) {
+                            time_to_departure = null;
+                        }
                     }
                     
                     // building insertion record that looks like this:
@@ -397,12 +411,22 @@ function updateDatabase(records) {
             connection.query(sql, [records], function (err, result) {
                 if (err) throw err;
                 console.log(`Insert Result: ${JSON.stringify(result)}`);
+                
+                connection.query("SHOW WARNINGS", function(error, result2) {
+                    
+                    console.log(result2);
+                    
+                });
+                
+                
                 connection.end(function(err) {
                     
                     if (err) {
                         console.log("Database update error:" + err);
                         reject(err);
                     }
+                    
+    
                     
                     console.log("Connection closed.");
                     resolve();

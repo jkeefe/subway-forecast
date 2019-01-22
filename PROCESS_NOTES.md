@@ -147,7 +147,7 @@ Dreamy!
 
 
 ```
-./node_modules/.bin/claudia create --region us-east-1 --handler index.handler --role ai-studio-lambda-rds --runtime nodejs8.10 --timeout 15 --name ai-studio-subway-forecast
+./node_modules/.bin/claudia create --region us-east-2 --handler index.handler --role ai-studio-lambda-rds --runtime nodejs8.10 --timeout 15 --name ai-studio-subway-forecast
 ```
 
 - In the lambda console:
@@ -157,7 +157,215 @@ Dreamy!
     
 ## VPC land
 
-Looks like I'll need to do this stuff to make my lambda function run on inside the VPC and have access to the internet: https://aws.amazon.com/premiumsupport/knowledge-center/internet-access-lambda-function/
+Looks like I'll need to do this stuff to make my lambda function run on inside the VPC and have access to the internet: https://aws.amazon.com/premiumsupport/knowledge-center/internet-access-lambda-function/ <- caution, you basically need to follow this from the bottom up.
+
+- Created VPC in the console
+- name: ai-studio-vpc
+- IPv4 CIDR block: 10.0.0.0/16
+- public subnet; 10.0.1.0/24
+- private subnet: 10.0.2.0/24
+- made sure private subnet in same availability zone as the RDS instance
+- then needed to create an Internet Gateway  
+    - associate it with the vpn
+    - now it has an id of `igw-...`
+- then needed to add that to a route table 
+    
+```
+Choose Edit, and then choose Add another route.
+Destination: 0.0.0.0/0
+Target:
+For a private subnet with a NAT instance: eni-…
+For a private subnet with a NAT gateway: nat-…
+For a public subnet: igw-…
+```
+- in RDS had to make a subnet group based on the ai-studio-vpc
+- switched the DB instance over to the AI studio vpc
+
+Got this error in RDS:
+
+```
+Cannot create a publicly accessible DBInstance. The specified VPC does not support DNS resolution, DNS hostnames, or both. Update the VPC and then try again
+```
+
+So had to do this:
+
+```
+    To describe and update DNS support for a VPC using the console
+
+    Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+
+    In the navigation pane, choose Your VPCs.
+
+    Select the VPC from the list.
+
+    Review the information in the Summary tab. In this example, both settings are enabled.
+
+
+                  The DNS Settings tab
+                
+    To update these settings, choose Actions and either Edit DNS Resolution or Edit DNS Hostnames. In the dialog box that opens, choose Yes or No, and then choose Save.
+
+```
+
+OK, trying this from scratch in the Ohio Region (us-east-2) to make a step-by-step (also because we were hitting limits)
+
+## VPC Setup
+
+First, the VPC: 
+
+- AWS Console
+- Set region to "Ohio" at top `us-east-2`
+- Went to VPCs
+
+### Making the oveall VPC
+
+- Create VPC   
+    - named it: `ai-studio-vpc`
+    - gave it IPv4 block: 10.0.0.0/16
+    - left the rest as defaults
+    - back at the VPC console, selected my new vpc
+    - These next steps are needed if your RDS instance is going to be public, like mine:
+        - hit "Actions" button
+        - "Edit DNS resolution"
+        - Enable if it's not
+        - Save
+        - hit "Actions" button
+        - "Edit DNS hostnames"
+        - Enable if it's not
+        - Save
+    
+### Subnets    
+    
+- Subnets
+    - Create Subnet
+    - ai-studio-subnet-private-1
+        - VPC: ai-studio-vpc
+        - Availability zone: `us-east-2a` <- Kept these all the same
+        - IPv4 block: 10.0.1.0/24
+    - ai-studio-subnet-private-2
+        - VPC: ai-studio-vpc
+        - Availability zone: `us-east-2a`
+        - IPv4 block: 10.0.2.0/24
+    - ai-studio-subnet-private-3
+        - VPC: ai-studio-vpc
+        - Availability zone: `us-east-2b` <- RDS wants at least one in another zone
+        - IPv4 block: 10.0.4.0/24         <- this is randomly out of order sorry
+    - ai-studio-subnet-public-1
+        - VPC: ai-studio-vpc
+        - Availability zone: `us-east-2a`
+        - IPv4 block: 10.0.3.0/24
+        
+Note that none of these are currently either public or private (well, they're all private). We'll change that with the route table. But need a gateway first.
+        
+### Internet Gateway
+
+First we need to establish an internet gateway for the VPC. This is a necessary before making an NAT Gateway, it seems.
+
+- Internet Gateways
+- Create Internet gateway
+- Gave it a name `ai-studio-internet-gateway`
+- Then back on the Internet Gateway dashboard:
+    - Select the new (not attached) gateway
+    - Actions Button -> Attach VPC
+    - Pick the ai-studio-vpc
+        
+### NAT Gateway
+        
+Because I want my lambda function to be able to work in the VPC *and* get out to the internet, I need to attach an NAT Gateway to the public subnet. See: https://aws.amazon.com/premiumsupport/knowledge-center/internet-access-lambda-function/
+
+Note that the language here gets confusing about whether the NAT goes on the private subnet. But the tables are pretty clear here: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html
+
+Still in the VPC console:
+
+- NAT Gateways
+- Create NAT Gateway
+- Pick a subnet. This looks to be the **public** subnet, where it "lives." Annoyingly, the dropdown doesn't have the subnet names, so had to go back and get the id for my public subnet.
+- Elastic IP allocation -> Create New EIP (note you only get 5 per region)
+- Then used "Edit Route Tables" button
+
+### Route Tables
+
+So to use the NAT Gateway, I need route tables. 
+
+One table will be for public subnets, one table will be for private subnets. 
+
+- Create Route Table
+    - Named first one: ai-studio for private subnets
+    - VPC: ai-studio-vpc
+- Created another
+    - Named first one: ai-studio for public subnets
+    - VPC: ai-studio-vpc
+    
+OK, now ... this is a little strange ... but the route *used for the private subnets* (where to go next) points (routes) to the NAT Gateway in the *pubic* subnet.
+
+- Highlighted the ai-studio for *private* subnets
+- Picked the "Routes" tab below
+- Clicked "Edit routes"
+- One is already there: `10.0.0.0/16 local active`
+- Add Destination: 0.0.0.0/0
+- It'll say "no results found"  ... I just tabbed over to the next box
+- Target: id of the NAT Gateway (again, no "names" in the dropdown, so I had to go back and get the ID). This should begin with `nat-`
+
+- Back at the Route Table dashboard
+- Highlighted the ai-studio for *public* subnets
+- Picked the "Routes" tab below
+- Clicked "Edit routes"
+- One is already there: `10.0.0.0/16 local active`
+- Add Destination: 0.0.0.0/0 
+- It'll say "no results found"  ... I just tabbed over to the next box
+- Target: This time, it's the internet gateway I just made, which starts with `igw-`
+
+Back at the Route Table dashboard I made the `ai-studio for private subnets` as a "main table" -- based on that drawing above, and some other info.
+
+- Selected the `ai-studio for private subnets` route
+- Hit the "Actions" button
+- Picked "Set Main Route Table"
+
+I also like the approach of making separate subnets to use in the Lambda instance, as described in [this Medium post](https://medium.com/@philippholly/aws-lambda-enable-outgoing-internet-access-within-vpc-8dd250e11e12). Though I didn't do that here. I'll just associate it with the private subnets. 
+
+- Head over to the Subnets console (from the left column)
+- Click individually on each one and then on the "Route Table" tab
+- All the "private" subnets should show the `ai-studio for private subnets` table
+    - Remember, the second entry on the table should have a target that starts `nat-...`
+- But the "public" subnet/s should show the one for `public subnets`
+    - Remember, the second entry on the table should have a target that starts `igw-...`
+- If they need to be changed, click "Edit route table association" and pick the right table (by ID, not name, alas)
+
+## RDS - MySQL
+
+- AWS Console
+- RDS
+- Engine: MySQL
+- Dev/Test (I don't need this is a bunch of availability zones)
+- Allocated Storage: 200GB (nearly a year of data)
+- named it
+- username
+- password
+- defaults
+- Yes to "Public accessibility" - so we can get at the data from our laptops, etc.
+- Availability zone: `us-east-2a` just like all the subnets
+- Create new VPC Security Group (tho I'll go edit that later)
+- Database name: subways
+- default settings until
+- Maintenance -> Select window. Picked at time that is *not* during NYC subway rush hour. Note it's in UTC.
+- Created database
+- Waited a few minutes
+- Got the updated description of the database
+- Clicked on the security group that was added automatically to name it
+- Noted the endpoint, which I'll need for connecting in the code
+
+## Lambda
+
+The build of the lambda function is above, but to get it in the right region I had to deploy it to `us-east-2` with this command: 
+
+```
+./node_modules/.bin/claudia create --region us-east-2 --handler index.handler --role ai-studio-lambda-rds --runtime nodejs8.10 --timeout 15 --name ai-studio-subway-forecast
+```
+
+
+
+
+
 
 
 
@@ -166,6 +374,10 @@ TODO:
 - Add more error handling
 - Write raw data to S3 using snapshot time as key
 - In another table, store tweets/min using snapshot time as key
+
+Each public subnet needs a route table that includes the Internet Gateway
+
+Each private subnet needs a _different_ route table that doesn't.
 
 
     
