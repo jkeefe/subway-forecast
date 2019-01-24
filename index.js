@@ -312,7 +312,7 @@ async function getSubwayTimes() {
                     }
                     
                     // building insertion record that looks like this:
-                    // INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture) VALUES ?
+                    // INSERT INTO traintimes (snapshotUnix, snapshotNYC, routeId, stationIdGTFS, direction, trainOrderLine, trainOrderAll, arrivalTime, departureTime, updatedOn, timeToArrival, timeToDeparture, delay) VALUES ?
                     
                     var record = [snapshotUnix, snapshotNYC, train.routeId, stop_number, direction, trainLineOrders[train.routeId], i, train.arrivalTime, train.departureTime, result.updatedOn, time_to_arrival, time_to_departure, train.delay];
                     

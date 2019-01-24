@@ -255,7 +255,16 @@ First, the VPC:
         - Availability zone: `us-east-2a`
         - IPv4 block: 10.0.3.0/24
         
-Note that none of these are currently either public or private (well, they're all private). We'll change that with the route table. But need a gateway first.
+If you plan to put a publicly-reachable EC2 instance inside one (or both) of the subnets labeled "public," you also have to do this so they get a public IP address reachable inside the VPC:
+
+- Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+- In the navigation pane, choose Subnets.
+- Select your subnet and choose Subnet Actions, Modify auto-assign IP settings.
+- The Enable auto-assign public IPv4 address check box, if selected, requests a public IPv4 address for all instances launched into the selected subnet. Select or clear the check box as required, and then choose Save.
+
+More on this here: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html 
+
+Note that none of the subnets are currently either public or private (well, they're all private). We'll change that with the route table. But need a gateway first.
         
 ### Internet Gateway
 
