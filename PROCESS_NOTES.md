@@ -372,9 +372,18 @@ The build of the lambda function is above, but to get it in the right region I h
 ```
 
 
+# Observations
 
-
-
+- Check out morning of Tuesday, Jan 22 :
+    - [8:45 AM] Downtown 6 trains are massively crowded/delayed today
+    - [8:58 AM] Lots of A/C delays too because of an issue at Jay Street
+- Wednesday, Jan 23: Water main break at 14th and 7th Ave
+    - [7:15 AM] From: Notify NYC Due to a reported water main break, L train service is suspended between 8th Avenue, Manhattan and Bedford Avenue, Brooklyn in both directions. http://www.mta.info .  http://on.nyc.gov/2gFqaVT
+    - [8:10 AM] I’m now on the E after being diverted and this is delayed. Sigh  LOL I love the subway. God bless the MTA.
+    - [9:08 AM] Just heard over intercom still no L from Union square to 8th.
+    - [9:13 AM] Yeah it just took me 2 hours door to door. So good luck
+- Monday, Jan 28
+    - [9:13 AM] While I’m waiting on a C train whose arrival time is “Delay,” thought I’d let you know (Franklin St./ N-bound toward Manhattan)
 
 
 
