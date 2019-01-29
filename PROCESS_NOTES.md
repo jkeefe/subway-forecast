@@ -377,7 +377,8 @@ The build of the lambda function is above, but to get it in the right region I h
 
 
 
-
+- January 29
+    - 7:31 am on S-bound A at 175 "due to a stalled N-bound train we have delays in S-bound service." my train totally packed. 
 
 TODO: 
 - Add more error handling
