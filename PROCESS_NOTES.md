@@ -384,10 +384,9 @@ The build of the lambda function is above, but to get it in the right region I h
     - [9:13 AM] Yeah it just took me 2 hours door to door. So good luck
 - Monday, Jan 28
     - [9:13 AM] While I’m waiting on a C train whose arrival time is “Delay,” thought I’d let you know (Franklin St./ N-bound toward Manhattan)
-
-
 - January 29
     - 7:31 am on S-bound A at 175 "due to a stalled N-bound train we have delays in S-bound service." my train totally packed. 
+    - [9:31 AM] A/C is currently the Fyre Festival of train lines
 
 TODO: 
 - Add more error handling
