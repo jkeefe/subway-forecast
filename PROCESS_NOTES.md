@@ -387,6 +387,10 @@ The build of the lambda function is above, but to get it in the right region I h
 - January 29
     - 7:31 am on S-bound A at 175 "due to a stalled N-bound train we have delays in S-bound service." my train totally packed. 
     - [9:31 AM] A/C is currently the Fyre Festival of train lines
+- February 8
+    - [8:45 AM] “Heavy smoke condition at 2nd Ave.” F trains being held in stations behind it back toward Brooklyn.
+    - [8:48 AM] A/C is crawling because either we’re about to start traveling the 6th ave line or the F is about to start traveling our 8th ave line, it’s unclear!
+    - [8:50 AM] “Waiting for the FDNY to arrive at the station.” Sounds like this is going to go on for awhile.
 
 TODO: 
 - Add more error handling
