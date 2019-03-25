@@ -401,10 +401,14 @@ The build of the lambda function is above, but to get it in the right region I h
 - Started here: https://github.com/Quartz/aistudio-documentation/wiki/Amazon-EC2-Setup
 - Which involved updating things as described here: https://course.fast.ai/start_aws.html
 
+I actually set up two environments. The above will install fastai 1.0. For fastai 0.7, I followed the "conda installation" in [these instructions](https://forums.fast.ai/t/fastai-v0-7-install-issues-thread/24652).
+
+
 But mainly:
 ```
 ssh -i ~/.ssh/<your_private_key_pair> -L localhost:8888:localhost:8888 ubuntu@<your instance IP>
-source activate pytorch_p36
+source activate python3  ## For fastai 1.0
+source activate fastai   ## For fastai 0.7
 jupyter notebook
 ```
 
@@ -458,11 +462,14 @@ Using [screen](https://www.linode.com/docs/networking/ssh/using-gnu-screen-to-ma
 In order to use an application with a Screen session do the following:
 
 Enter the command 'screen' at a terminal prompt.
+
 Once Screen is running, enter an application or program command, such as irssi or mutt.
 Your terminal session will function as usual. To end your current session without impacting any running processes, enter 'Ctrl+a+d' or quit the Terminal application. Once you quit a session, you will be returned to the pre-Screen prompt. The Screen session and applications will continue to run. You may reattach to your session at any time by using the command 'screen -r'.
 ```
 
+## Doing some Random Forests
 
+First I had to set up a new virtual environment for the _old_ fastai (0.7) because the one I had was running 1.0. The instructions for that are [here](https://forums.fast.ai/t/fastai-v0-7-install-issues-thread/24652)
 
 
 
