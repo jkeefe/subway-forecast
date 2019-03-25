@@ -391,6 +391,90 @@ The build of the lambda function is above, but to get it in the right region I h
     - [8:45 AM] “Heavy smoke condition at 2nd Ave.” F trains being held in stations behind it back toward Brooklyn.
     - [8:48 AM] A/C is crawling because either we’re about to start traveling the 6th ave line or the F is about to start traveling our 8th ave line, it’s unclear!
     - [8:50 AM] “Waiting for the FDNY to arrive at the station.” Sounds like this is going to go on for awhile.
+    Johnny Simon [9:01 AM]
+    -  [9:03 AM] “Power is off on the rails” several stations away from 2nd ave because FDNY are on the tracks. Hard to imagine this clearing up anytime soon.
+    - [9:34 AM] My F train was rerouted to the G line. Too many F trains on the A line so they are alternating. Had to switch to an A train on Hoyt.
+    - [9:41 AM] 4/5 is also crawling
+
+# Setting up Jupyter Notebook
+
+- Started here: https://github.com/Quartz/aistudio-documentation/wiki/Amazon-EC2-Setup
+- Which involved updating things as described here: https://course.fast.ai/start_aws.html
+
+But mainly:
+```
+ssh -i ~/.ssh/<your_private_key_pair> -L localhost:8888:localhost:8888 ubuntu@<your instance IP>
+source activate pytorch_p36
+jupyter notebook
+```
+
+It will give you a link, starting with http://localhost:8888..., which you put in a browser.
+
+Then when I start a notebook, I use pytorch_p36
+
+## Reading from MySQL into Pandas Dataframe
+
+Followed this: https://gist.github.com/stefanthoss/364b2a99521d5bb76d51
+
+```
+source activate python3
+conda install pymysql
+conda install -c pytorch -c fastai fastai pytorch torchvision cuda92
+```
+
+See the notebook for the code!
+
+Also had to assign an elastic IP address to the EC2 instance so that I could then give that IP address permission to hit the RDS database.
+
+
+
+## Setting up environment variables
+
+
+
+To work with the MySQL database, I need some passwords and such. So learned how to set environment variables in the conda environment [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#macos-and-linux). 
+
+
+## MySQL fun
+
+So I really need to make some indexes on this data, because 300M is taking too long for simple searches.
+
+Need to do this:
+
+```sql
+CREATE INDEX main_atrributes ON traintables (snapshotNYC, routeId, trainOrderLine)
+```
+
+But didn't know if this might take days. So I spun up an EC2 micro and gave its IP address to the RDS security group.
+
+Logged into it. Then did `sudo apt install mysql-client-core-5.7` to install mysql on the box.
+
+Issued a mysql command like:
+
+
+Using [screen](https://www.linode.com/docs/networking/ssh/using-gnu-screen-to-manage-persistent-terminal-sessions/) to come back later:
+
+```Screen Basics
+In order to use an application with a Screen session do the following:
+
+Enter the command 'screen' at a terminal prompt.
+Once Screen is running, enter an application or program command, such as irssi or mutt.
+Your terminal session will function as usual. To end your current session without impacting any running processes, enter 'Ctrl+a+d' or quit the Terminal application. Once you quit a session, you will be returned to the pre-Screen prompt. The Screen session and applications will continue to run. You may reattach to your session at any time by using the command 'screen -r'.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 TODO: 
 - Add more error handling
