@@ -430,11 +430,7 @@ See the notebook for the code!
 
 Also had to assign an elastic IP address to the EC2 instance so that I could then give that IP address permission to hit the RDS database.
 
-
-
 ## Setting up environment variables
-
-
 
 To work with the MySQL database, I need some passwords and such. So learned how to set environment variables in the conda environment [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#macos-and-linux). 
 
