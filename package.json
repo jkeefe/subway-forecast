@@ -21,7 +21,7 @@
     "claudia": "^2.14.2"
   },
   "dependencies": {
-    "moment": "^2.18.1",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.14",
     "mta-gtfs": "^1.0.3",
     "mysql": "^2.16.0",
