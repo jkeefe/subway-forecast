@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "mta-gtfs": "^1.0.3",
     "mysql": "^2.16.0",
     "twit": "^2.2.9"
